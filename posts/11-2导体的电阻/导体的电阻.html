@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="黄轶凡">
+<meta name="dcterms.date" content="2024-08-30">
 
-<title>iPhys</title>
+<title>iPhys - 导体的电阻</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,35 +68,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
   <script defer="" src="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.js"></script>
   <script>document.addEventListener("DOMContentLoaded", function () {
@@ -142,17 +113,17 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">iPhys</span>
     </a>
   </div>
@@ -163,7 +134,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -184,118 +155,170 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">iPhys</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page-left">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="电磁学">电磁学 <span class="quarto-category-count">(2)</span></div><div class="category" data-category="电路">电路 <span class="quarto-category-count">(2)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#导体电阻的定义" id="toc-导体电阻的定义" class="nav-link active" data-scroll-target="#导体电阻的定义">导体电阻的定义</a>
+  <ul class="collapse">
+  <li><a href="#电阻的概念" id="toc-电阻的概念" class="nav-link" data-scroll-target="#电阻的概念">电阻的概念</a></li>
+  <li><a href="#欧姆定律" id="toc-欧姆定律" class="nav-link" data-scroll-target="#欧姆定律">欧姆定律</a></li>
+  </ul></li>
+  <li><a href="#影响导体电阻的因素" id="toc-影响导体电阻的因素" class="nav-link" data-scroll-target="#影响导体电阻的因素">影响导体电阻的因素</a>
+  <ul class="collapse">
+  <li><a href="#导体的电阻率" id="toc-导体的电阻率" class="nav-link" data-scroll-target="#导体的电阻率">导体的电阻率</a></li>
+  <li><a href="#电阻率与温度的关系" id="toc-电阻率与温度的关系" class="nav-link" data-scroll-target="#电阻率与温度的关系">电阻率与温度的关系</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">导体的电阻</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">电磁学</div>
+    <div class="quarto-category">电路</div>
+  </div>
+  </div>
 
 
 
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>黄轶凡 </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 30, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
 
 
+</header>
 
 
+<section id="导体电阻的定义" class="level2">
+<h2 class="anchored" data-anchor-id="导体电阻的定义">导体电阻的定义</h2>
+<section id="电阻的概念" class="level3">
+<h3 class="anchored" data-anchor-id="电阻的概念">电阻的概念</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./assets/导体的电阻-1.png" class="img-fluid figure-img"></p>
+<figcaption>300</figcaption>
+</figure>
+</div>
+<ol type="1">
+<li><p>物理意义：导体对电流的阻碍作用</p></li>
+<li><p>定义：导体两端的电压 <span class="math inline">U</span> 与通过导体的电流 <span class="math inline">I</span> 的比值</p></li>
+<li><p>定义式：<span class="math inline">R=\frac{U}{I}</span></p></li>
+<li><p>单位：欧姆 <span class="math inline">1\;\Omega=1\;\mathrm{V /A}</span></p></li>
+</ol>
+</section>
+<section id="欧姆定律" class="level3">
+<h3 class="anchored" data-anchor-id="欧姆定律">欧姆定律</h3>
+<ol type="1">
+<li>内容：导体中的电流 <span class="math inline">I</span> 跟导体两端的电压 <span class="math inline">U</span> 成正比，跟导体的电阻 <span class="math inline">R</span> 成反比</li>
+<li>公式：<span class="math inline">I=\frac{U}{R}</span></li>
+<li>适用条件：金属导电和电解液导电</li>
+</ol>
+</section>
+</section>
+<section id="影响导体电阻的因素" class="level2">
+<h2 class="anchored" data-anchor-id="影响导体电阻的因素">影响导体电阻的因素</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./assets/导体的电阻-2.png" class="img-fluid figure-img"></p>
+<figcaption>500</figcaption>
+</figure>
+</div>
+<section id="导体的电阻率" class="level3">
+<h3 class="anchored" data-anchor-id="导体的电阻率">导体的电阻率</h3>
+<p>同种材料的导体，其电阻 <span class="math inline">R</span> 与它的长度 <span class="math inline">l</span> 成正比，与它的横截面积 <span class="math inline">S</span> 成反比；导体电阻还与构成它的材料有关。</p>
+<p><span class="math display">
+R\propto \frac{l}{s}\Rightarrow R =\rho \frac{l}{s}
+</span></p>
+<section id="例" class="level4">
+<h4 class="anchored" data-anchor-id="例">例</h4>
+<div class="callout callout-style-default callout-warning callout-titled" title="思考">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+思考
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>为什么双脚站在电线杆上的小鸟不会被电死？</p>
+</div>
+</div>
+<p>一只鸟站在一条通过 <span class="math inline">500\;\mathrm{A}</span> 电流的铜质裸导线上。鸟两爪间的距离是 <span class="math inline">4\;\mathrm{cm}</span>，输电线的横截面积是 <span class="math inline">170\;mm^{2}</span> 。求鸟两爪之间的电压。(铜导线的电阻率为 <span class="math inline">\rho=1.7\times 10^{-8}\;\Omega \cdot m</span>)</p>
+<div class="callout callout-style-default callout-note callout-titled" title="答案">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+答案
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math inline">R=\rho \frac{l}{s}=1.7\times 10^{-8}\times \frac{4\times 10^{-2}}{170\times 10^{-6}}\;\Omega=4\times 10^{-6}\;\Omega</span></p>
+<p><span class="math inline">U=IR=2\times 10^{-3}\;\mathrm{V}</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="练习" class="level4">
+<h4 class="anchored" data-anchor-id="练习">练习</h4>
+<div class="columns">
+<div class="column" style="width:65%;">
+<p>如图，一块均匀的长方体样品，长为 <span class="math inline">a</span>，宽为 <span class="math inline">b</span>，厚为 <span class="math inline">c</span>。电流沿 <span class="math inline">AB</span> 方向时测得样品的电阻为 <span class="math inline">R</span>，则样品的电阻率是多少？ 电流沿 <span class="math inline">CD</span> 方向时样品的电阻是多少？</p>
+</div><div class="column" style="width:35%;">
+<p><img src="./assets/导体的电阻.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="练习-1" class="level4">
+<h4 class="anchored" data-anchor-id="练习-1">练习</h4>
+<p>一根粗细均匀的细铜丝，原来的电阻为 <span class="math inline">R</span>，则：</p>
+<ol type="1">
+<li>对折后，电阻变为 <span class="math inline">\underline{\qquad}</span>；</li>
+<li>均匀拉长为原来的两倍，电阻变为 <span class="math inline">\underline{\qquad}</span>。</li>
+</ol>
+</section>
+<section id="练习-2" class="level4">
+<h4 class="anchored" data-anchor-id="练习-2">练习</h4>
+<p>某同学拿了一根细橡胶管，里面灌满了盐水，两端用粗铜丝塞住管口，形成一段封闭的盐水柱。他量得盐水柱的长度是 <span class="math inline">30\;\mathrm{cm}</span>，并测出盐水柱的电阻等于 <span class="math inline">R</span>。现握住橡胶管的两端把它拉长，使盐水柱的长度变为 <span class="math inline">40\mathrm{cm}</span>。如果溶液的电阻随长度、横截面积的变化规律与金属导体相同，此时盐水柱的电阻应该等于多少？</p>
+</section>
+</section>
+<section id="电阻率与温度的关系" class="level3">
+<h3 class="anchored" data-anchor-id="电阻率与温度的关系">电阻率与温度的关系</h3>
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="电磁学,电路" data-listing-date-sort="1724947200000" data-listing-file-modified-sort="1725070188158" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="86">
-<div class="thumbnail">
-<p><a href="./posts/11-2导体的电阻/导体的电阻.html" class="no-external"></a></p><a href="./posts/11-2导体的电阻/导体的电阻.html" class="no-external">
-<p class="card-img-top"><img src="posts/11-2导体的电阻/assets/导体的电阻-1.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/11-2导体的电阻/导体的电阻.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/11-2导体的电阻/导体的电阻.html" class="no-external">导体的电阻</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/11-2导体的电阻/导体的电阻.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('电磁学'); return false;">
-电磁学
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('电路'); return false;">
-电路
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/11-2导体的电阻/导体的电阻.html" class="no-external">物理意义：导体对电流的阻碍作用</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/11-2导体的电阻/导体的电阻.html" class="no-external">
-<div class="listing-date">
-Aug 30, 2024
-</div>
-<div class="listing-author">
-黄轶凡
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="电磁学,电路" data-listing-date-sort="1724860800000" data-listing-file-modified-sort="1724986751037" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="144">
-<div class="thumbnail">
-<p><a href="./posts/11-1电源和电流/电源和电流.html" class="no-external"></a></p><a href="./posts/11-1电源和电流/电源和电流.html" class="no-external">
-<p class="card-img-top"><img src="posts/11-1电源和电流/assets/电源和电流-3.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/11-1电源和电流/电源和电流.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/11-1电源和电流/电源和电流.html" class="no-external">电源和电流</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/11-1电源和电流/电源和电流.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('电磁学'); return false;">
-电磁学
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('电路'); return false;">
-电路
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/11-1电源和电流/电源和电流.html" class="no-external">为什么闪电只能存在一瞬，而手电筒中的小灯泡能够持续发光？</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/11-1电源和电流/电源和电流.html" class="no-external">
-<div class="listing-date">
-Aug 29, 2024
-</div>
-<div class="listing-author">
-黄轶凡
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</section>
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

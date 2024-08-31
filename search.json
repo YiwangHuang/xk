@@ -39,7 +39,7 @@
     "href": "index.html",
     "title": "iPhys",
     "section": "",
-    "text": "电源和电流\n\n\n\n\n\n\n电磁学\n\n\n电路\n\n\n\n\n\n\n\n\n\nAug 29, 2024\n\n\n黄轶凡\n\n\n\n\n\n\nNo matching items"
+    "text": "导体的电阻\n\n\n\n\n\n\n电磁学\n\n\n电路\n\n\n\n\n\n\n\n\n\nAug 30, 2024\n\n\n黄轶凡\n\n\n\n\n\n\n\n\n\n\n\n\n电源和电流\n\n\n\n\n\n\n电磁学\n\n\n电路\n\n\n\n\n\n\n\n\n\nAug 29, 2024\n\n\n黄轶凡\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "post/11-1电源和电流/电源和电流.html",
@@ -68,5 +68,26 @@
     "title": "电源和电流",
     "section": "电池的容量",
     "text": "电池的容量\n电池放电时能输出的总电荷量叫做电池的容量，通常以“安时”(\\mathrm{A\\cdot h})或“毫安时”(\\mathrm{mA\\cdot h})作单位。"
+  },
+  {
+    "objectID": "posts/11-2导体的电阻/导体的电阻.html",
+    "href": "posts/11-2导体的电阻/导体的电阻.html",
+    "title": "导体的电阻",
+    "section": "",
+    "text": "300\n\n\n\n物理意义：导体对电流的阻碍作用\n定义：导体两端的电压 U 与通过导体的电流 I 的比值\n定义式：R=\\frac{U}{I}\n单位：欧姆 1\\;\\Omega=1\\;\\mathrm{V /A}\n\n\n\n\n\n内容：导体中的电流 I 跟导体两端的电压 U 成正比，跟导体的电阻 R 成反比\n公式：I=\\frac{U}{R}\n适用条件：金属导电和电解液导电"
+  },
+  {
+    "objectID": "posts/11-2导体的电阻/导体的电阻.html#导体电阻的定义",
+    "href": "posts/11-2导体的电阻/导体的电阻.html#导体电阻的定义",
+    "title": "导体的电阻",
+    "section": "",
+    "text": "300\n\n\n\n物理意义：导体对电流的阻碍作用\n定义：导体两端的电压 U 与通过导体的电流 I 的比值\n定义式：R=\\frac{U}{I}\n单位：欧姆 1\\;\\Omega=1\\;\\mathrm{V /A}\n\n\n\n\n\n内容：导体中的电流 I 跟导体两端的电压 U 成正比，跟导体的电阻 R 成反比\n公式：I=\\frac{U}{R}\n适用条件：金属导电和电解液导电"
+  },
+  {
+    "objectID": "posts/11-2导体的电阻/导体的电阻.html#影响导体电阻的因素",
+    "href": "posts/11-2导体的电阻/导体的电阻.html#影响导体电阻的因素",
+    "title": "导体的电阻",
+    "section": "影响导体电阻的因素",
+    "text": "影响导体电阻的因素\n\n\n\n500\n\n\n\n导体的电阻率\n同种材料的导体，其电阻 R 与它的长度 l 成正比，与它的横截面积 S 成反比；导体电阻还与构成它的材料有关。\n\nR\\propto \\frac{l}{s}\\Rightarrow R =\\rho \\frac{l}{s}\n\n\n例\n\n\n\n\n\n\n思考\n\n\n\n为什么双脚站在电线杆上的小鸟不会被电死？\n\n\n一只鸟站在一条通过 500\\;\\mathrm{A} 电流的铜质裸导线上。鸟两爪间的距离是 4\\;\\mathrm{cm}，输电线的横截面积是 170\\;mm^{2} 。求鸟两爪之间的电压。(铜导线的电阻率为 \\rho=1.7\\times 10^{-8}\\;\\Omega \\cdot m)\n\n\n\n\n\n\n答案\n\n\n\n\n\nR=\\rho \\frac{l}{s}=1.7\\times 10^{-8}\\times \\frac{4\\times 10^{-2}}{170\\times 10^{-6}}\\;\\Omega=4\\times 10^{-6}\\;\\Omega\nU=IR=2\\times 10^{-3}\\;\\mathrm{V}\n\n\n\n\n\n练习\n\n\n如图，一块均匀的长方体样品，长为 a，宽为 b，厚为 c。电流沿 AB 方向时测得样品的电阻为 R，则样品的电阻率是多少？ 电流沿 CD 方向时样品的电阻是多少？\n\n\n\n\n\n\n练习\n一根粗细均匀的细铜丝，原来的电阻为 R，则：\n\n对折后，电阻变为 \\underline{\\qquad}；\n均匀拉长为原来的两倍，电阻变为 \\underline{\\qquad}。\n\n\n\n练习\n某同学拿了一根细橡胶管，里面灌满了盐水，两端用粗铜丝塞住管口，形成一段封闭的盐水柱。他量得盐水柱的长度是 30\\;\\mathrm{cm}，并测出盐水柱的电阻等于 R。现握住橡胶管的两端把它拉长，使盐水柱的长度变为 40\\mathrm{cm}。如果溶液的电阻随长度、横截面积的变化规律与金属导体相同，此时盐水柱的电阻应该等于多少？\n\n\n\n电阻率与温度的关系"
   }
 ]
