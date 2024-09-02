@@ -39,7 +39,7 @@
     "href": "index.html",
     "title": "iPhys",
     "section": "",
-    "text": "课后习题答案\n\n\n\n\n\n\n电磁学\n\n\n\n\n\n\n\n\n\nSep 1, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n导体的电阻\n\n\n\n\n\n\n电磁学\n\n\n电路\n\n\n\n\n\n\n\n\n\nAug 30, 2024\n\n\n黄轶凡\n\n\n\n\n\n\n\n\n\n\n\n\n电源和电流\n\n\n\n\n\n\n电磁学\n\n\n电路\n\n\n\n\n\n\n\n\n\nAug 29, 2024\n\n\n黄轶凡\n\n\n\n\n\n\nNo matching items"
+    "text": "静电场复习\n\n\n\n\n\n\n静电场，复习\n\n\n\n\n\n\n\n\n\nSep 2, 2024\n\n\n黄轶凡\n\n\n\n\n\n\n\n\n\n\n\n\n课后习题答案\n\n\n\n\n\n\n电磁学\n\n\n\n\n\n\n\n\n\nSep 1, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n导体的电阻\n\n\n\n\n\n\n电磁学\n\n\n电路\n\n\n\n\n\n\n\n\n\nAug 30, 2024\n\n\n黄轶凡\n\n\n\n\n\n\n\n\n\n\n\n\n电源和电流\n\n\n\n\n\n\n电磁学\n\n\n电路\n\n\n\n\n\n\n\n\n\nAug 29, 2024\n\n\n黄轶凡\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "post/11-1电源和电流/电源和电流.html",
@@ -103,5 +103,33 @@
     "title": "课后习题答案",
     "section": "",
     "text": "运行脚本"
+  },
+  {
+    "objectID": "posts/学考复习静电场/学考复习静电场.html",
+    "href": "posts/学考复习静电场/学考复习静电场.html",
+    "title": "静电场复习",
+    "section": "",
+    "text": "处于静电平衡状态下的导体，内部的电场强度处处为零\n导体内部没有净剩电荷，电荷只分布在导体的外表面"
+  },
+  {
+    "objectID": "posts/学考复习静电场/学考复习静电场.html#静电平衡",
+    "href": "posts/学考复习静电场/学考复习静电场.html#静电平衡",
+    "title": "静电场复习",
+    "section": "",
+    "text": "处于静电平衡状态下的导体，内部的电场强度处处为零\n导体内部没有净剩电荷，电荷只分布在导体的外表面"
+  },
+  {
+    "objectID": "posts/学考复习静电场/学考复习静电场.html#物理量关系梳理",
+    "href": "posts/学考复习静电场/学考复习静电场.html#物理量关系梳理",
+    "title": "静电场复习",
+    "section": "物理量关系梳理",
+    "text": "物理量关系梳理\n\n\n\n\n\n\n\n求电荷在某点的电势能\n\n\n\n\n静电力做功与电势能的关系：W_{AB}=E_{pA}-E_{pB}\n若规定上式中电荷在 B 点的电势能为 0，则电荷在 A 点的电势能数值上等于 W_{AB}。也就是说，电荷在某点的电势能，等于把它从这点移动到零势能位置时静电力做的功。\n\n\n\n\n快问快答\n在某点电荷激发的电场中，一带电量为 -q 的点电荷从无穷远处移动到 A 点，静电力做功为 W，求： 1. 该点电荷在 A 点的电势能； 2. A 点的电势。\n\n\n\n\n\n\n答案\n\n\n\n\n\n\n无穷远处电势为零，点电荷在 A 的电势能等于把它从 A 移动到零势能位置时静电力做功，即 E_{pA}=-W\n\\varphi_{A}=\\frac{E_{pA}}{-q}=\\frac{W}{q}\n\n\n\n\n\n\n练习\n电场中有 A、B、C 三点，一带电量为 q=-2\\times 10^{-9} \\;C 的点电荷在 A 点的电势能为 E_{pA}=1.2 \\times 10^{-8}\\;J，将该点电荷从 A 点移动到 B 点，静电力做功为 W_{AB}=1.8\\times 10^{-8}\\;J，C 点电势为 \\varphi_{C}=-5V。\n\n求点电荷在 B 点的电势能；\n求 B 点的电势；\n求 B、C 两点间的电势差；\n求点电荷从 B 点移动到 C 点的电场力做功。\n\n\n\n\n\n\n\n答案\n\n\n\n\n\n\nW_{AB} = E_{pA}-E_{pB} \\Rightarrow E_{pB} = E_{pA}-W_{AB}=1.2 \\times 10^{-8}-1.8\\times 10^{-8}=-6\\times 10^{-9}\\;J\n\\varphi_{B} = \\frac{E_{pB}}{q}=\\frac{-6\\times 10^{-9}}{-2\\times 10^{-9}}=3V\nU_{BC} = \\varphi_{B}-\\varphi_{C}=3-(-5)=8V\nW_{BC}=qU_{BC}=-2\\times 10^{-9} \\cdot 8=-1.6\\times 10^{-8}\\;J"
+  },
+  {
+    "objectID": "posts/学考复习静电场/学考复习静电场.html#电势差和场强的关系",
+    "href": "posts/学考复习静电场/学考复习静电场.html#电势差和场强的关系",
+    "title": "静电场复习",
+    "section": "电势差和场强的关系",
+    "text": "电势差和场强的关系\n\n\n\n\n\n\n\n\n公式\n物理含义\n适用范围\n\n\n\n\nE=\\frac{F}{q}\n场强的定义式\n一切电场\n\n\nE=k\\frac{Q}{r^{2}}\n真空中点电荷场强的决定式\n真空中，场源电荷 Q 是点电荷\n\n\nE=\\frac{U}{d}\n匀强电场中场强的决定式\n匀强电场\n\n\n\n\n练习\n空间存在着平行纸面的匀强电场，但电场的具体方向未知，现在纸面内建立直角坐标系 xOy，用仪器沿 Ox、Oy 两个方向探测该静电场中各点电势，得到各点电势 \\varphi 与横、纵坐标的函数关系如图所示。求该电场的电场强度 E。\n\n\n\n匀强电场特点\n\n匀强电场中，两条平行线段上相等距离的两点间的电势差相等\n\n\n\\begin{cases}\nAB / / CD \\\\\nAB = CD\n\\end{cases}\n\\Rightarrow U_{AB} = U_{CD}\n\n\n匀强电场中，电势沿任意直线均匀变化（任意线段的几何等分点也是电势差等分点）\n\n\n练习\n\n\na、b、c、d 是匀强电场中的四个点，它们正好是一个矩形的四个顶点．电场线与矩形所在的平面平行．已知 a 点的电势是 20\\;V，b 点的电势是 24\\;V，d 点的电势是 4\\;V，求 c 点的电势。\n\n\n\n\n\n\n练习\n\n\n有一匀强电场的方向平行于 xOy 平面，平面内 a、b、c、d 四点的位置如图所示，cd、cb 分别垂直于 x 轴、y 轴，其中 a、O、b 三点电势分别为：4\\;V、6\\;V、8\\;V，一电荷量为 q=-2\\times 10^{-5}\\;C 的负点电荷由 a 点开始沿 abcd 路线运动。\n求：\\varphi_{d}，场强的大小和方向。\n\n\n\n\n\n\n练习\n\n\n如图，A、B、C 三点在匀强电场中，AC\\bot BC, \\angle ABC=60^\\circ, BC=20 cm，，把一个电荷量 q＝1\\times10^{-5} C 的正电荷从 A 移到 B，静电力做功 －8\\times10^{-5} J；从 B 移到 C，静电力做功为 2\\times10^{-5} J ，求该匀强电场的电场强度大小和方向？"
   }
 ]

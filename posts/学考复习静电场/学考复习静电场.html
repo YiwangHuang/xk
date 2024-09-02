@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-09-01">
+<meta name="author" content="黄轶凡">
+<meta name="dcterms.date" content="2024-09-02">
 
-<title>iPhys - 课后习题答案</title>
+<title>iPhys - 静电场复习</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -68,6 +69,49 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script defer="" src="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -120,16 +164,33 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#静电场中力的性质" id="toc-静电场中力的性质" class="nav-link active" data-scroll-target="#静电场中力的性质">静电场中力的性质</a>
+  <ul class="collapse">
+  <li><a href="#静电平衡" id="toc-静电平衡" class="nav-link" data-scroll-target="#静电平衡">静电平衡</a></li>
+  </ul></li>
+  <li><a href="#静电场中能的性质" id="toc-静电场中能的性质" class="nav-link" data-scroll-target="#静电场中能的性质">静电场中能的性质</a>
+  <ul class="collapse">
+  <li><a href="#物理量关系梳理" id="toc-物理量关系梳理" class="nav-link" data-scroll-target="#物理量关系梳理">物理量关系梳理</a></li>
+  <li><a href="#电势差和场强的关系" id="toc-电势差和场强的关系" class="nav-link" data-scroll-target="#电势差和场强的关系">电势差和场强的关系</a>
+  <ul class="collapse">
+  <li><a href="#匀强电场特点" id="toc-匀强电场特点" class="nav-link" data-scroll-target="#匀强电场特点">匀强电场特点</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">课后习题答案</h1>
+<h1 class="title">静电场复习</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">电磁学</div>
+    <div class="quarto-category">静电场，复习</div>
   </div>
   </div>
 
@@ -137,11 +198,17 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>黄轶凡 </p>
+          </div>
+  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 1, 2024</p>
+      <p class="date">September 2, 2024</p>
     </div>
   </div>
   
@@ -153,20 +220,181 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<!-- ## 运行 JavaScript 脚本的按钮
+<section id="静电场中力的性质" class="level1">
+<h1>静电场中力的性质</h1>
+<section id="静电平衡" class="level2">
+<h2 class="anchored" data-anchor-id="静电平衡">静电平衡</h2>
+<ol type="1">
+<li>处于静电平衡状态下的导体，内部的电场强度处处为零</li>
+<li>导体内部没有净剩电荷，电荷只分布在导体的外表面</li>
+</ol>
+</section>
+</section>
+<section id="静电场中能的性质" class="level1">
+<h1>静电场中能的性质</h1>
+<section id="物理量关系梳理" class="level2">
+<h2 class="anchored" data-anchor-id="物理量关系梳理">物理量关系梳理</h2>
+<p><img src="./assets/学考静电场复习.png" class="img-fluid" width="500"></p>
+<div class="callout callout-style-default callout-important callout-titled" title="**求电荷在某点的电势能**">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>求电荷在某点的电势能</strong>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>静电力做功与电势能的关系：<span class="math inline">W_{AB}=E_{pA}-E_{pB}</span></li>
+<li>若规定上式中电荷在 <span class="math inline">B</span> 点的电势能为 <span class="math inline">0</span>，则电荷在 <span class="math inline">A</span> 点的电势能数值上等于 <span class="math inline">W_{AB}</span>。也就是说，<strong>电荷在某点的电势能，等于把它从这点移动到零势能位置时静电力做的功</strong>。</li>
+</ol>
+</div>
+</div>
+<section id="快问快答" class="level4">
+<h4 class="anchored" data-anchor-id="快问快答">快问快答</h4>
+<p>在某点电荷激发的电场中，一带电量为 <span class="math inline">-q</span> 的点电荷从无穷远处移动到 <span class="math inline">A</span> 点，静电力做功为 <span class="math inline">W</span>，求： 1. 该点电荷在 <span class="math inline">A</span> 点的电势能； 2. <span class="math inline">A</span> 点的电势。</p>
+<div class="callout callout-style-default callout-note callout-titled" title="答案">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+答案
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>无穷远处电势为零，点电荷在 <span class="math inline">A</span> 的电势能等于把它从 <span class="math inline">A</span> 移动到零势能位置时静电力做功，即 <span class="math inline">E_{pA}=-W</span></li>
+<li><span class="math inline">\varphi_{A}=\frac{E_{pA}}{-q}=\frac{W}{q}</span></li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+<section id="练习" class="level4">
+<h4 class="anchored" data-anchor-id="练习">练习</h4>
+<p>电场中有 <span class="math inline">A</span>、<span class="math inline">B</span>、<span class="math inline">C</span> 三点，一带电量为 <span class="math inline">q=-2\times 10^{-9} \;C</span> 的点电荷在 <span class="math inline">A</span> 点的电势能为 <span class="math inline">E_{pA}=1.2 \times 10^{-8}\;J</span>，将该点电荷从 <span class="math inline">A</span> 点移动到 <span class="math inline">B</span> 点，静电力做功为 <span class="math inline">W_{AB}=1.8\times 10^{-8}\;J</span>，<span class="math inline">C</span> 点电势为 <span class="math inline">\varphi_{C}=-5V</span>。</p>
+<ol type="1">
+<li>求点电荷在 <span class="math inline">B</span> 点的电势能；</li>
+<li>求 <span class="math inline">B</span> 点的电势；</li>
+<li>求 <span class="math inline">B</span>、<span class="math inline">C</span> 两点间的电势差；</li>
+<li>求点电荷从 <span class="math inline">B</span> 点移动到 <span class="math inline">C</span> 点的电场力做功。</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="答案">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+答案
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><span class="math inline">W_{AB} = E_{pA}-E_{pB} \Rightarrow E_{pB} = E_{pA}-W_{AB}=1.2 \times 10^{-8}-1.8\times 10^{-8}=-6\times 10^{-9}\;J</span></li>
+<li><span class="math inline">\varphi_{B} = \frac{E_{pB}}{q}=\frac{-6\times 10^{-9}}{-2\times 10^{-9}}=3V</span></li>
+<li><span class="math inline">U_{BC} = \varphi_{B}-\varphi_{C}=3-(-5)=8V</span></li>
+<li><span class="math inline">W_{BC}=qU_{BC}=-2\times 10^{-9} \cdot 8=-1.6\times 10^{-8}\;J</span></li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="电势差和场强的关系" class="level2">
+<h2 class="anchored" data-anchor-id="电势差和场强的关系">电势差和场强的关系</h2>
+<table class="table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 32%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>公式</th>
+<th>物理含义</th>
+<th style="text-align: left;">适用范围</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">E=\frac{F}{q}</span></td>
+<td>场强的定义式</td>
+<td style="text-align: left;">一切电场</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">E=k\frac{Q}{r^{2}}</span></td>
+<td>真空中点电荷场强的决定式</td>
+<td style="text-align: left;">真空中，场源电荷 <span class="math inline">Q</span> 是点电荷</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">E=\frac{U}{d}</span></td>
+<td>匀强电场中场强的决定式</td>
+<td style="text-align: left;">匀强电场</td>
+</tr>
+</tbody>
+</table>
+<section id="练习-1" class="level4">
+<h4 class="anchored" data-anchor-id="练习-1">练习</h4>
+<p>空间存在着平行纸面的匀强电场，但电场的具体方向未知，现在纸面内建立直角坐标系 <span class="math inline">xOy</span>，用仪器沿 <span class="math inline">Ox</span>、<span class="math inline">Oy</span> 两个方向探测该静电场中各点电势，得到各点电势 <span class="math inline">\varphi</span> 与横、纵坐标的函数关系如图所示。求该电场的电场强度 <span class="math inline">E</span>。</p>
+<p><img src="./assets/学考静电场复习-3.png" class="img-fluid" width="300"></p>
+</section>
+<section id="匀强电场特点" class="level3">
+<h3 class="anchored" data-anchor-id="匀强电场特点">匀强电场特点</h3>
+<ol type="1">
+<li><strong>匀强电场中，两条平行线段上相等距离的两点间的电势差相等</strong></li>
+</ol>
+<p><span class="math display">
+\begin{cases}
+AB / / CD \\
+AB = CD
+\end{cases}
+\Rightarrow U_{AB} = U_{CD}
+</span></p>
+<ol start="2" type="1">
+<li><strong>匀强电场中，电势沿任意直线均匀变化（任意线段的几何等分点也是电势差等分点）</strong></li>
+</ol>
+<section id="练习-2" class="level4">
+<h4 class="anchored" data-anchor-id="练习-2">练习</h4>
+<div class="columns">
+<div class="column" style="width:77%;">
+<p><span class="math inline">a</span>、<span class="math inline">b</span>、<span class="math inline">c</span>、<span class="math inline">d</span> 是匀强电场中的四个点，它们正好是一个矩形的四个顶点．电场线与矩形所在的平面平行．已知 <span class="math inline">a</span> 点的电势是 <span class="math inline">20\;V</span>，<span class="math inline">b</span> 点的电势是 <span class="math inline">24\;V</span>，<span class="math inline">d</span> 点的电势是 <span class="math inline">4\;V</span>，求 <span class="math inline">c</span> 点的电势。</p>
+</div><div class="column" style="width:23%;">
+<p><img src="./assets/学考静电场复习-4.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="练习-3" class="level4">
+<h4 class="anchored" data-anchor-id="练习-3">练习</h4>
+<div class="columns">
+<div class="column" style="width:70%;">
+<p>有一匀强电场的方向平行于 <span class="math inline">xOy</span> 平面，平面内 <span class="math inline">a</span>、<span class="math inline">b</span>、<span class="math inline">c</span>、<span class="math inline">d</span> 四点的位置如图所示，<span class="math inline">cd</span>、<span class="math inline">cb</span> 分别垂直于 <span class="math inline">x</span> 轴、<span class="math inline">y</span> 轴，其中 <span class="math inline">a</span>、<span class="math inline">O</span>、<span class="math inline">b</span> 三点电势分别为：<span class="math inline">4\;V</span>、<span class="math inline">6\;V</span>、<span class="math inline">8\;V</span>，一电荷量为 <span class="math inline">q=-2\times 10^{-5}\;C</span> 的负点电荷由 <span class="math inline">a</span> 点开始沿 <span class="math inline">abcd</span> 路线运动。</p>
+<p>求：<span class="math inline">\varphi_{d}</span>，场强的大小和方向。</p>
+</div><div class="column" style="width:30%;">
+<p><img src="./assets/学考静电场复习-5.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="练习-4" class="level4">
+<h4 class="anchored" data-anchor-id="练习-4">练习</h4>
+<div class="columns">
+<div class="column" style="width:70%;">
+<p>如图，<span class="math inline">A</span>、<span class="math inline">B</span>、<span class="math inline">C</span> 三点在匀强电场中，<span class="math inline">AC\bot BC</span>, <span class="math inline">\angle ABC=60^\circ</span>, <span class="math inline">BC=20 cm</span>，，把一个电荷量 <span class="math inline">q＝1\times10^{-5} C</span> 的正电荷从 <span class="math inline">A</span> 移到 <span class="math inline">B</span>，静电力做功 <span class="math inline">－8\times10^{-5} J</span>；从 <span class="math inline">B</span> 移到 <span class="math inline">C</span>，静电力做功为 <span class="math inline">2\times10^{-5} J</span> ，求该匀强电场的电场强度大小和方向？</p>
+</div><div class="column" style="width:30%;">
+<p><img src="./assets/学考静电场复习-6.png" class="img-fluid"></p>
+</div>
+</div>
 
-<button id="run-script-button">运行脚本</button>
 
-<script>
-document.getElementById("run-script-button").addEventListener("click", function() {
-    // 在这里添加您希望运行的 JavaScript 代码
-    alert("脚本已运行！");
-    // 例如，可以修改页面内容，执行计算，或发送请求等。
-    console.log("这是固定的 JavaScript 脚本。");
-});
-</script> -->
-
-
+</section>
+</section>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
