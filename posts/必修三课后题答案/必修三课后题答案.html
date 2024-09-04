@@ -91,7 +91,7 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="../../#"> 
-<span class="menu-text">switch</span></a>
+<span class="menu-text">隐藏目录</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../about.html"> 
@@ -169,66 +169,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <!-- include 是跨文档复用内容的便捷方法，用该方法引入视图切换按钮 -->
-<style>
-.quarto-button {
-    background-color: #007acc;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: uppercase;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, box-shadow 0.3s;
-    cursor: pointer;
-}
-
-.quarto-button:hover {
-    background-color: #005fa3;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-}
-
-.quarto-button:active {
-    background-color: #004a82;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-}    
-</style>
-<button id="toggleButton" class="quarto-button">
-Loading…
-</button>
-<script>
-    // 获取body元素、按钮和可能存在的div
-    const body = document.querySelector('body');
-    const toggleButton = document.getElementById('toggleButton');
-    const sidebar = document.getElementById('quarto-margin-sidebar');
-
-    // 根据body的class初始化按钮文本和（可选的）div显示状态
-    function updateUI() {
-        if (body.classList.contains('fullcontent')) {
-            toggleButton.textContent = 'Exit Full Content';
-            if (sidebar) {
-                sidebar.style.display = 'none';
-            }
-        } else {
-            toggleButton.textContent = 'Enter Full Content';
-            if (sidebar) {
-                sidebar.style.display = 'block';
-            }
-        }
-    }
-    // 初始化按钮文本和div显示状态
-    updateUI();
-
-    // 定义按钮点击事件的处理函数
-    toggleButton.addEventListener('click', () => {
-        // 切换body的class
-        body.classList.toggle('fullcontent');
-        
-        // 更新按钮文本和div显示状态
-        updateUI();
-    });
-</script>
+<!-- {{< include ../../custom-template.html >}} -->
 <section id="第-11-章" class="level2">
 <h2 class="anchored" data-anchor-id="第-11-章">第 11 章</h2>
 <section id="电源和电流" class="level3">
@@ -256,6 +197,51 @@ document.getElementById("run-script-button").addEventListener("click", function(
 </section>
 
 </main> <!-- /main -->
+<script>
+// 确保文档内容加载完成后执行以下脚本
+document.addEventListener("DOMContentLoaded", function() {
+  // 获取body元素、按钮和可能存在的div
+  const body = document.querySelector('body');
+  const sidebar = document.getElementById('quarto-margin-sidebar');
+
+
+  // 查找导航栏中的所有链接项
+  var navItems = document.querySelectorAll('.navbar a');
+
+  // 遍历每个链接项，寻找文本内容为“Trigger JS”的项
+  navItems.forEach(function(item) {
+    if (item.textContent.trim() === "隐藏目录") {
+
+      // 为找到的项添加点击事件监听器
+      item.addEventListener("click", function(event) {
+        event.preventDefault();  // 阻止默认的跳转行为
+
+        // 显示提示框，表示 JavaScript 已经触发
+        alert("JavaScript script triggered!");
+        
+        // 你可以在这里添加其他自定义的 JavaScript 脚本
+
+        // 切换body的class
+        body.classList.toggle('fullcontent');
+
+        // 根据body的class初始化div显示状态
+        if (body.classList.contains('fullcontent')) {
+            if (sidebar) {
+              item.textContent = '显示目录';
+              sidebar.style.display = 'none'; // 设置目录栏的显示状态
+            }
+        } else {
+            if (sidebar) {
+              item.textContent = '隐藏目录';
+              sidebar.style.display = 'block'; // 设置目录栏的显示状态
+            }
+        }
+      });
+    }
+  });
+});
+</script>
+
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

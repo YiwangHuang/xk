@@ -134,7 +134,7 @@ window.Quarto = {
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="../../#"> 
-<span class="menu-text">阅读/演示</span></a>
+<span class="menu-text">隐藏目录</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../about.html"> 
@@ -362,7 +362,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // 遍历每个链接项，寻找文本内容为“Trigger JS”的项
   navItems.forEach(function(item) {
-    if (item.textContent.trim() === "阅读/演示") {
+    if (item.textContent.trim() === "隐藏目录") {
 
       // 为找到的项添加点击事件监听器
       item.addEventListener("click", function(event) {
@@ -379,12 +379,12 @@ document.addEventListener("DOMContentLoaded", function() {
         // 根据body的class初始化div显示状态
         if (body.classList.contains('fullcontent')) {
             if (sidebar) {
-              item.textContent = 'Exit Full Content';
+              item.textContent = '显示目录';
               sidebar.style.display = 'none'; // 设置目录栏的显示状态
             }
         } else {
             if (sidebar) {
-              item.textContent = 'Enter Full Content';
+              item.textContent = '隐藏目录';
               sidebar.style.display = 'block'; // 设置目录栏的显示状态
             }
         }

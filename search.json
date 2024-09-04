@@ -39,7 +39,7 @@
     "href": "index.html",
     "title": "iPhys",
     "section": "",
-    "text": "按钮测试文件\n\n\n\n\n\n\n测试文件\n\n\n\n\n\n\n\n\n\nSep 3, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n静电场复习\n\n\n\n\n\n\n静电场，复习\n\n\n\n\n\n\n\n\n\nSep 2, 2024\n\n\n黄轶凡\n\n\n\n\n\n\n\n\n\n\n\n\n必修三课后题答案\n\n\n\n\n\n\n电磁学\n\n\n答案\n\n\n\n\n\n\n\n\n\nSep 2, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n导体的电阻\n\n\n\n\n\n\n电磁学\n\n\n电路\n\n\n\n\n\n\n\n\n\nAug 30, 2024\n\n\n黄轶凡\n\n\n\n\n\n\n\n\n\n\n\n\n电源和电流\n\n\n\n\n\n\n电磁学\n\n\n电路\n\n\n\n\n\n\n\n\n\nAug 29, 2024\n\n\n黄轶凡\n\n\n\n\n\n\nNo matching items"
+    "text": "静电场复习\n\n\n\n\n\n\n静电场，复习\n\n\n\n\n\n\n\n\n\nSep 2, 2024\n\n\n黄轶凡\n\n\n\n\n\n\n\n\n\n\n\n\n必修三课后题答案\n\n\n\n\n\n\n电磁学\n\n\n答案\n\n\n\n\n\n\n\n\n\nSep 2, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n导体的电阻\n\n\n\n\n\n\n电磁学\n\n\n电路\n\n\n\n\n\n\n\n\n\nAug 30, 2024\n\n\n黄轶凡\n\n\n\n\n\n\n\n\n\n\n\n\n电源和电流\n\n\n\n\n\n\n电磁学\n\n\n电路\n\n\n\n\n\n\n\n\n\nAug 29, 2024\n\n\n黄轶凡\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "post/11-1电源和电流/电源和电流.html",
@@ -131,20 +131,6 @@
     "title": "静电场复习",
     "section": "电势差和场强的关系",
     "text": "电势差和场强的关系\n\n\n\n\n\n\n\n\n公式\n物理含义\n适用范围\n\n\n\n\nE=\\frac{F}{q}\n场强的定义式\n一切电场\n\n\nE=k\\frac{Q}{r^{2}}\n真空中点电荷场强的决定式\n真空中，场源电荷 Q 是点电荷\n\n\nE=\\frac{U}{d}\n匀强电场中场强的决定式\n匀强电场\n\n\n\n\n练习\n空间存在着平行纸面的匀强电场，但电场的具体方向未知，现在纸面内建立直角坐标系 xOy，用仪器沿 Ox、Oy 两个方向探测该静电场中各点电势，得到各点电势 \\varphi 与横、纵坐标的函数关系如图所示。求该电场的电场强度 E。\n\n\n\n匀强电场特点\n\n匀强电场中，两条平行线段上相等距离的两点间的电势差相等\n\n\n\\begin{cases}\nAB / / CD \\\\\nAB = CD\n\\end{cases}\n\\Rightarrow U_{AB} = U_{CD}\n\n\n匀强电场中，电势沿任意直线均匀变化（任意线段的几何等分点也是电势差等分点）\n\n\n练习\n\n\na、b、c、d 是匀强电场中的四个点，它们正好是一个矩形的四个顶点．电场线与矩形所在的平面平行．已知 a 点的电势是 20\\;V，b 点的电势是 24\\;V，d 点的电势是 4\\;V，求 c 点的电势。\n\n\n\n\n\n\n练习\n\n\n有一匀强电场的方向平行于 xOy 平面，平面内 a、b、c、d 四点的位置如图所示，cd、cb 分别垂直于 x 轴、y 轴，其中 a、O、b 三点电势分别为：4\\;V、6\\;V、8\\;V，一电荷量为 q=-2\\times 10^{-5}\\;C 的负点电荷由 a 点开始沿 abcd 路线运动。\n求：\\varphi_{d}，场强的大小和方向。\n\n\n\n\n\n\n练习\n\n\n如图，A、B、C 三点在匀强电场中，AC\\bot BC, \\angle ABC=60^\\circ, BC=20 cm，，把一个电荷量 q＝1\\times10^{-5} C 的正电荷从 A 移到 B，静电力做功 －8\\times10^{-5} J；从 B 移到 C，静电力做功为 2\\times10^{-5} J ，求该匀强电场的电场强度大小和方向？"
-  },
-  {
-    "objectID": "posts/test/test.html",
-    "href": "posts/test/test.html",
-    "title": "按钮测试文件",
-    "section": "",
-    "text": "Loading…\n\n\n\n恒定电场\n由稳定分布的电荷所产生的稳定的电场，叫作恒定电场\n\n\n\n\n\n\nTip\n\n\n\n\n尽管这些电荷也在运动，但有的流走了，另外的又来补充，电荷的分布是稳定的，不随时间变化，电场的分布也不会随时间变化；\n恒定电场是由电源、导线等电路元件所积累的电荷共同形成的。\n\n\n\n\n\n恒定电流\n\n\n\n\n\n\n思考\n\n\n\n在恒定电场的作用下，导体中的自由电荷做定向移动。那么这个移动的速度会不会随着时间的推移而越来越快？\n\n\n\n\n\n\n\n\n答案\n\n\n\n\n\n在运动过程中与导体内不动的粒子不断碰撞，碰撞阻碍了自由电荷的定向运动，结果是大量自由电荷定向运动的平均速率不随时间变化。\n\n\n\n大小和方向都不随时间变化的电流叫做恒定电流\n\n\n电流的定义\n\n\n\n\n\n\n思考\n\n\n\n如何描述校门口的车流量大小？尝试总结几个关键要素\n\n\n\n电流定义：单位时间内通过某个横截面的电荷量\n定义式：I=\\frac{q}{t}\n单位：安培，是国际单位中的基本单位，1\\;C=1\\;A\\cdot S\n电流方向：正电荷定向移动的方向为电流方向（标量）"
-  },
-  {
-    "objectID": "posts/test/test.html#运行-javascript-脚本的按钮",
-    "href": "posts/test/test.html#运行-javascript-脚本的按钮",
-    "title": "按钮切换显示风格",
-    "section": "",
-    "text": "切换小屏样式\n\n\n\n由稳定分布的电荷所产生的稳定的电场，叫作恒定电场\n\n\n\n\n\n\nTip\n\n\n\n\n尽管这些电荷也在运动，但有的流走了，另外的又来补充，电荷的分布是稳定的，不随时间变化，电场的分布也不会随时间变化；\n恒定电场是由电源、导线等电路元件所积累的电荷共同形成的。\n\n\n\n\n\n\n\n\n\n\n\n\n思考\n\n\n\n在恒定电场的作用下，导体中的自由电荷做定向移动。那么这个移动的速度会不会随着时间的推移而越来越快？\n\n\n\n\n\n\n\n\n答案\n\n\n\n\n\n在运动过程中与导体内不动的粒子不断碰撞，碰撞阻碍了自由电荷的定向运动，结果是大量自由电荷定向运动的平均速率不随时间变化。\n\n\n\n大小和方向都不随时间变化的电流叫做恒定电流\n\n\n\n\n\n\n\n\n\n思考\n\n\n\n如何描述校门口的车流量大小？尝试总结几个关键要素"
   },
   {
     "objectID": "posts/必修三课后题答案/必修三课后题答案.html",
