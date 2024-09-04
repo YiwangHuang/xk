@@ -228,7 +228,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="静电场，复习" data-listing-date-sort="1725206400000" data-listing-file-modified-sort="1725421441459" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="337">
+<div class="quarto-post image-right" data-index="0" data-categories="静电场，复习" data-listing-date-sort="1725206400000" data-listing-file-modified-sort="1725470305718" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="337">
 <div class="thumbnail">
 <p><a href="./posts/学考复习静电场/学考复习静电场.html" class="no-external"></a></p><a href="./posts/学考复习静电场/学考复习静电场.html" class="no-external">
 <p class="card-img-top"><img src="posts/学考复习静电场/assets/学考静电场复习.png"  class="thumbnail-image card-img"/></p>
@@ -261,7 +261,7 @@ Sep 2, 2024
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="电磁学,答案" data-listing-date-sort="1725206400000" data-listing-file-modified-sort="1725421543177" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="43">
+<div class="quarto-post image-right" data-index="1" data-categories="电磁学,答案" data-listing-date-sort="1725206400000" data-listing-file-modified-sort="1725470324896" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="43">
 <div class="thumbnail">
 <p><a href="./posts/必修三课后题答案/必修三课后题答案.html" class="no-external"></a></p><a href="./posts/必修三课后题答案/必修三课后题答案.html" class="no-external">
 <p class="card-img-top"><img src="posts/必修三课后题答案/assets/必修三课后题答案.png"  class="thumbnail-image card-img"/></p>
@@ -318,7 +318,7 @@ Sep 2, 2024
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="电磁学,电路" data-listing-date-sort="1724947200000" data-listing-file-modified-sort="1725421355417" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="66">
+<div class="quarto-post image-right" data-index="2" data-categories="电磁学,电路" data-listing-date-sort="1724947200000" data-listing-file-modified-sort="1725470335904" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="66">
 <div class="thumbnail">
 <p><a href="./posts/11-2导体的电阻/导体的电阻.html" class="no-external"></a></p><a href="./posts/11-2导体的电阻/导体的电阻.html" class="no-external">
 <p class="card-img-top"><img src="posts/11-2导体的电阻/assets/导体的电阻-1.png"  class="thumbnail-image card-img"/></p>
@@ -354,7 +354,7 @@ Aug 30, 2024
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="电磁学,电路" data-listing-date-sort="1724860800000" data-listing-file-modified-sort="1725421363724" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="148">
+<div class="quarto-post image-right" data-index="3" data-categories="电磁学,电路" data-listing-date-sort="1724860800000" data-listing-file-modified-sort="1725470352841" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="148">
 <div class="thumbnail">
 <p><a href="./posts/11-1电源和电流/电源和电流.html" class="no-external"></a></p><a href="./posts/11-1电源和电流/电源和电流.html" class="no-external">
 <p class="card-img-top"><img src="posts/11-1电源和电流/assets/电源和电流-3.png"  class="thumbnail-image card-img"/></p>
@@ -395,6 +395,51 @@ Aug 29, 2024
 No matching items
 </div>
 </div></main> <!-- /main -->
+<script>
+// 确保文档内容加载完成后执行以下脚本
+document.addEventListener("DOMContentLoaded", function() {
+  // 获取body元素、按钮和可能存在的div
+  const body = document.querySelector('body');
+  const sidebar = document.getElementById('quarto-margin-sidebar');
+
+
+  // 查找导航栏中的所有链接项
+  var navItems = document.querySelectorAll('.navbar a');
+
+  // 遍历每个链接项，寻找文本内容为“Trigger JS”的项
+  navItems.forEach(function(item) {
+    if (item.textContent.trim() === "隐藏目录") {
+
+      // 为找到的项添加点击事件监听器
+      item.addEventListener("click", function(event) {
+        event.preventDefault();  // 阻止默认的跳转行为
+
+        // 显示提示框，表示 JavaScript 已经触发
+        // alert("JavaScript script triggered!");
+        
+        // 你可以在这里添加其他自定义的 JavaScript 脚本
+
+        // 切换body的class
+        body.classList.toggle('fullcontent');
+
+        // 根据body的class初始化div显示状态
+        if (body.classList.contains('fullcontent')) {
+            if (sidebar) {
+              item.textContent = '显示目录';
+              sidebar.style.display = 'none'; // 设置目录栏的显示状态
+            }
+        } else {
+            if (sidebar) {
+              item.textContent = '隐藏目录';
+              sidebar.style.display = 'block'; // 设置目录栏的显示状态
+            }
+        }
+      });
+    }
+  });
+});
+</script>
+
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
