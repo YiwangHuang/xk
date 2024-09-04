@@ -350,23 +350,36 @@ Tip
 
 </main> <!-- /main -->
 <script>
-  
-// custom.js
+// 确保文档内容加载完成后执行以下脚本
 document.addEventListener("DOMContentLoaded", function() {
-    // 查找导航栏中的 'Trigger JS' 选项
-    var navItems = document.querySelectorAll('.navbar a');
-    navItems.forEach(function(item) {
-      if (item.textContent.trim() === "Trigger JS") {
-        item.addEventListener("click", function(event) {
-          event.preventDefault();  // 阻止默认跳转行为
-          alert("JavaScript script triggered!");
-          // 在这里添加你想要触发的其他脚本
-        });
-      }
-    });
-  });
-  
 
+  document.getElementById("trigger-js").addEventListener("click", function(event) {
+    event.preventDefault();  // 阻止默认跳转行为
+    alert("JavaScript script triggered!");
+    // 在这里添加你想要触发的其他脚本
+  });
+
+  // 查找导航栏中的所有链接项
+  // var navItems = document.querySelectorAll('.navbar a');
+
+
+
+  // 遍历每个链接项，寻找文本内容为“Trigger JS”的项
+  // navItems.forEach(function(item) {
+  //   if (item.textContent.trim() === "Trigger JS") {
+
+  //     // 为找到的项添加点击事件监听器
+  //     item.addEventListener("click", function(event) {
+  //       event.preventDefault();  // 阻止默认的跳转行为
+
+  //       // 显示提示框，表示 JavaScript 已经触发
+  //       alert("JavaScript script triggered!");
+
+  //       // 你可以在这里添加其他自定义的 JavaScript 脚本
+  //     });
+  //   }
+  // });
+});
 </script>
 
 <script id="quarto-html-after-body" type="application/javascript">

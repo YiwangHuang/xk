@@ -33,28 +33,3 @@ ol,ul,dl {
 iframe {
     margin-bottom: 0em;
 }
-
-/* 小屏幕适配样式，为切换显示样式 */
-body.force-small-screen {
-    body .page-columns,body.fullcontent:not(.floating):not(.docked) .page-columns,body.slimcontent:not(.floating):not(.docked) .page-columns,body.docked .page-columns,body.docked.slimcontent .page-columns,body.docked.fullcontent .page-columns,body.floating .page-columns,body.floating.slimcontent .page-columns,body.floating.fullcontent .page-columns {
-        display:grid !important ;
-        gap: 0 !important ;
-        grid-template-columns: [screen-start] 1.5em [screen-start-inset page-start page-start-inset body-start-outset body-start body-content-start] minmax(0px, 1fr) [body-content-end body-end body-end-outset page-end-inset page-end screen-end-inset] 1.5em [screen-end] !important 
-    }
-
-    body:not(.floating):not(.docked) .page-columns.toc-left {
-        display: grid !important ;
-        gap: 0 !important ;
-        grid-template-columns: [screen-start] 1.5em [screen-start-inset page-start page-start-inset body-start-outset body-start body-content-start] minmax(0px, 1fr) [body-content-end body-end body-end-outset page-end-inset page-end screen-end-inset] 1.5em [screen-end] !important 
-    }
-
-    body:not(.floating):not(.docked) .page-columns.toc-left .page-columns {
-        display: grid !important ;
-        gap: 0 !important ;
-        grid-template-columns: [screen-start] 1.5em [screen-start-inset page-start page-start-inset body-start-outset body-start body-content-start] minmax(0px, 1fr) [body-content-end body-end body-end-outset page-end-inset page-end screen-end-inset] 1.5em [screen-end] !important 
-    }
-
-    nav[role=doc-toc] {
-        display: none !important 
-    }
-}
