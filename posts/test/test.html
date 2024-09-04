@@ -379,11 +379,13 @@ document.addEventListener("DOMContentLoaded", function() {
         // 根据body的class初始化div显示状态
         if (body.classList.contains('fullcontent')) {
             if (sidebar) {
-                sidebar.style.display = 'none';
+              item.textContent = 'Exit Full Content';
+              sidebar.style.display = 'none'; // 设置目录栏的显示状态
             }
         } else {
             if (sidebar) {
-                sidebar.style.display = 'block';
+              item.textContent = 'Enter Full Content';
+              sidebar.style.display = 'block'; // 设置目录栏的显示状态
             }
         }
       });
