@@ -133,6 +133,10 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
+    <a class="nav-link" href="../../#"> 
+<span class="menu-text">Trigger JS</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
@@ -204,6 +208,68 @@ window.Quarto = {
 </header>
 
 
+<!-- include 是跨文档复用内容的便捷方法，用该方法引入视图切换按钮 -->
+<!-- {{< include ../../custom.js >}} -->
+<style>
+.quarto-button {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.quarto-button:hover {
+    background-color: #005fa3;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.quarto-button:active {
+    background-color: #004a82;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}    
+</style>
+<button id="toggleButton" class="quarto-button">
+Loading…
+</button>
+<script>
+    // 获取body元素、按钮和可能存在的div
+    const body = document.querySelector('body');
+    const toggleButton = document.getElementById('toggleButton');
+    const sidebar = document.getElementById('quarto-margin-sidebar');
+
+    // 根据body的class初始化按钮文本和（可选的）div显示状态
+    function updateUI() {
+        if (body.classList.contains('fullcontent')) {
+            toggleButton.textContent = 'Exit Full Content';
+            if (sidebar) {
+                sidebar.style.display = 'none';
+            }
+        } else {
+            toggleButton.textContent = 'Enter Full Content';
+            if (sidebar) {
+                sidebar.style.display = 'block';
+            }
+        }
+    }
+    // 初始化按钮文本和div显示状态
+    updateUI();
+
+    // 定义按钮点击事件的处理函数
+    toggleButton.addEventListener('click', () => {
+        // 切换body的class
+        body.classList.toggle('fullcontent');
+        
+        // 更新按钮文本和div显示状态
+        updateUI();
+    });
+</script>
 <section id="恒定电场" class="level3">
 <h3 class="anchored" data-anchor-id="恒定电场">恒定电场</h3>
 <p>由稳定分布的电荷所产生的稳定的电场，叫作<strong>恒定电场</strong></p>
@@ -278,30 +344,31 @@ Tip
 <li><p>单位：安培，是国际单位中的<strong>基本单位</strong>，<span class="math inline">1\;C=1\;A\cdot S</span></p></li>
 <li><p>电流方向：正电荷定向移动的方向为电流方向（标量）</p></li>
 </ol>
-<button id="toggleButton">
-切换小屏样式
-</button>
-<script>
-    const toggleButton = document.getElementById('toggleButton');
-    const body = document.body;
-    let isForceSmallScreen = false;
-
-    toggleButton.addEventListener('click', () => {
-        if (isForceSmallScreen) {
-            body.classList.remove('force-small-screen');
-            toggleButton.textContent = '切换小屏样式';
-        } else {
-            body.classList.add('force-small-screen');
-            toggleButton.textContent = '恢复默认模式';
-        }
-        isForceSmallScreen = !isForceSmallScreen;
-    });
-</script>
 
 
 </section>
 
 </main> <!-- /main -->
+<script>
+  
+// custom.js
+document.addEventListener("DOMContentLoaded", function() {
+    // 查找导航栏中的 'Trigger JS' 选项
+    var navItems = document.querySelectorAll('.navbar a');
+    navItems.forEach(function(item) {
+      if (item.textContent.trim() === "Trigger JS") {
+        item.addEventListener("click", function(event) {
+          event.preventDefault();  // 阻止默认跳转行为
+          alert("JavaScript script triggered!");
+          // 在这里添加你想要触发的其他脚本
+        });
+      }
+    });
+  });
+  
+
+</script>
+
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

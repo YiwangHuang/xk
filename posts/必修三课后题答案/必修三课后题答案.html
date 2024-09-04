@@ -90,6 +90,10 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
+    <a class="nav-link" href="../../#"> 
+<span class="menu-text">switch</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
@@ -164,6 +168,67 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<!-- include 是跨文档复用内容的便捷方法，用该方法引入视图切换按钮 -->
+<style>
+.quarto-button {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.quarto-button:hover {
+    background-color: #005fa3;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.quarto-button:active {
+    background-color: #004a82;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}    
+</style>
+<button id="toggleButton" class="quarto-button">
+Loading…
+</button>
+<script>
+    // 获取body元素、按钮和可能存在的div
+    const body = document.querySelector('body');
+    const toggleButton = document.getElementById('toggleButton');
+    const sidebar = document.getElementById('quarto-margin-sidebar');
+
+    // 根据body的class初始化按钮文本和（可选的）div显示状态
+    function updateUI() {
+        if (body.classList.contains('fullcontent')) {
+            toggleButton.textContent = 'Exit Full Content';
+            if (sidebar) {
+                sidebar.style.display = 'none';
+            }
+        } else {
+            toggleButton.textContent = 'Enter Full Content';
+            if (sidebar) {
+                sidebar.style.display = 'block';
+            }
+        }
+    }
+    // 初始化按钮文本和div显示状态
+    updateUI();
+
+    // 定义按钮点击事件的处理函数
+    toggleButton.addEventListener('click', () => {
+        // 切换body的class
+        body.classList.toggle('fullcontent');
+        
+        // 更新按钮文本和div显示状态
+        updateUI();
+    });
+</script>
 <section id="第-11-章" class="level2">
 <h2 class="anchored" data-anchor-id="第-11-章">第 11 章</h2>
 <section id="电源和电流" class="level3">
