@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="黄轶凡">
+<meta name="dcterms.date" content="2024-09-09">
 
-<title>iPhys</title>
+<title>iPhys - 串联电路和并联电路</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,35 +68,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
   <script defer="" src="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.js"></script>
   <script>document.addEventListener("DOMContentLoaded", function () {
@@ -142,17 +113,17 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">iPhys</span>
     </a>
   </div>
@@ -163,11 +134,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./#"> 
+    <a class="nav-link" href="../../#"> 
 <span class="menu-text">隐藏目录</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -193,280 +164,234 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">iPhys</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page-left">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="电磁学">电磁学 <span class="quarto-category-count">(5)</span></div><div class="category" data-category="电路">电路 <span class="quarto-category-count">(4)</span></div><div class="category" data-category="答案">答案 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="静电场，复习">静电场，复习 <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#测量工具的使用" id="toc-测量工具的使用" class="nav-link active" data-scroll-target="#测量工具的使用">测量工具的使用</a>
+  <ul class="collapse">
+  <li><a href="#游标卡尺" id="toc-游标卡尺" class="nav-link" data-scroll-target="#游标卡尺">游标卡尺</a></li>
+  <li><a href="#螺旋测微器" id="toc-螺旋测微器" class="nav-link" data-scroll-target="#螺旋测微器">螺旋测微器</a></li>
+  <li><a href="#电压表和电流表的读数" id="toc-电压表和电流表的读数" class="nav-link" data-scroll-target="#电压表和电流表的读数">电压表和电流表的读数</a></li>
+  </ul></li>
+  <li><a href="#金属丝电阻率的测量" id="toc-金属丝电阻率的测量" class="nav-link" data-scroll-target="#金属丝电阻率的测量">金属丝电阻率的测量</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">串联电路和并联电路</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">电磁学</div>
+    <div class="quarto-category">电路</div>
+  </div>
+  </div>
 
 
 
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>黄轶凡 </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 9, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
 
 
+</header>
 
 
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="电磁学,电路" data-listing-date-sort="1725811200000" data-listing-file-modified-sort="1725846713376" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="166">
-<div class="thumbnail">
-<p><a href="./posts/11-3实验：导体电阻率的测量/实验：导体电阻率的测量.html" class="no-external"></a></p><a href="./posts/11-3实验：导体电阻率的测量/实验：导体电阻率的测量.html" class="no-external">
-<p class="card-img-top"><img src="posts/11-3实验：导体电阻率的测量/assets/实验：导体电阻率的测量.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/11-3实验：导体电阻率的测量/实验：导体电阻率的测量.html" class="no-external"></a></p>
+<section id="测量工具的使用" class="level2">
+<h2 class="anchored" data-anchor-id="测量工具的使用">测量工具的使用</h2>
+<section id="游标卡尺" class="level3">
+<h3 class="anchored" data-anchor-id="游标卡尺">游标卡尺</h3>
+<p><img src="./assets/实验：导体电阻率的测量.png" class="img-fluid" width="500"></p>
+<ol type="1">
+<li><p>构造：主尺、游标尺</p></li>
+<li><p>用途：测量厚度、长度、深度、内径、外径</p></li>
+<li><p>原理：利用主尺的单位刻度与游标尺的单位刻度之间固定的微量差值来提高测量精度</p></li>
+</ol>
+<table class="table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 25%">
+<col style="width: 34%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">刻度格数(分度)</th>
+<th style="text-align: center;">刻度总长度</th>
+<th style="text-align: center;"><span class="math inline">1\;\mathrm{mm}</span>与每小格的差值</th>
+<th style="text-align: center;">精确度(可精确到)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">10</span></td>
+<td style="text-align: center;"><span class="math inline">9\;\mathrm{mm}</span></td>
+<td style="text-align: center;"><span class="math inline">0.1\;\mathrm{mm}</span></td>
+<td style="text-align: center;"><span class="math inline">0.1\;\mathrm{mm}</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">20</span></td>
+<td style="text-align: center;"><span class="math inline">19\;\mathrm{mm}</span></td>
+<td style="text-align: center;"><span class="math inline">0.05\;\mathrm{mm}</span></td>
+<td style="text-align: center;"><span class="math inline">0.05\;\mathrm{mm}</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">50</span></td>
+<td style="text-align: center;"><span class="math inline">49\;\mathrm{mm}</span></td>
+<td style="text-align: center;"><span class="math inline">0.02\;\mathrm{mm}</span></td>
+<td style="text-align: center;"><span class="math inline">0.02\;\mathrm{mm}</span></td>
+</tr>
+</tbody>
+</table>
+<p><img src="./assets/实验：导体电阻率的测量-4.png" class="img-fluid"></p>
+<div class="callout callout-style-default callout-warning callout-titled" title="尝试读数">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/11-3实验：导体电阻率的测量/实验：导体电阻率的测量.html" class="no-external">串联电路和并联电路</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/11-3实验：导体电阻率的测量/实验：导体电阻率的测量.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('电磁学'); return false;">
-电磁学
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('电路'); return false;">
-电路
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/11-3实验：导体电阻率的测量/实验：导体电阻率的测量.html" class="no-external">构造：主尺、游标尺</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/11-3实验：导体电阻率的测量/实验：导体电阻率的测量.html" class="no-external">
-<div class="listing-date">
-Sep 9, 2024
-</div>
-<div class="listing-author">
-黄轶凡
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="电磁学,电路" data-listing-date-sort="1725465600000" data-listing-file-modified-sort="1725623172883" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1616">
-<div class="thumbnail">
-<p><a href="./posts/11-4串联电路和并联电路/串联电路和并联电路.html" class="no-external"></a></p><a href="./posts/11-4串联电路和并联电路/串联电路和并联电路.html" class="no-external">
-<p class="card-img-top"><img src="posts/11-4串联电路和并联电路/assets/串联电路和并联电路-33.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/11-4串联电路和并联电路/串联电路和并联电路.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/11-4串联电路和并联电路/串联电路和并联电路.html" class="no-external">串联电路和并联电路</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/11-4串联电路和并联电路/串联电路和并联电路.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('电磁学'); return false;">
-电磁学
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('电路'); return false;">
-电路
+<div class="callout-title-container flex-fill">
+尝试读数
 </div>
 </div>
-<div class="listing-description">
-<a href="./posts/11-4串联电路和并联电路/串联电路和并联电路.html" class="no-external"><br> <br></a>
+<div class="callout-body-container callout-body">
+<p><img src="./assets/实验：导体电阻率的测量-2.png" class="img-fluid"></p>
 </div>
 </div>
-<div class="metadata">
-<a href="./posts/11-4串联电路和并联电路/串联电路和并联电路.html" class="no-external">
-<div class="listing-date">
-Sep 5, 2024
+<ol start="4" type="1">
+<li>读数：若&nbsp;<span class="math inline">x</span>&nbsp;表示为主尺读出来的毫米数，&nbsp;<span class="math inline">K</span>&nbsp;表示为副尺上读出与主尺上某一刻线对齐的游标刻线的格数，则记录结果表达为 <strong><span class="math inline">(x+K\times 精确度)\; \mathrm{mm}</span></strong>。</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled" title="注意事项">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<div class="listing-author">
-黄轶凡
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="静电场，复习" data-listing-date-sort="1725206400000" data-listing-file-modified-sort="1725645723504" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="336">
-<div class="thumbnail">
-<p><a href="./posts/学考复习静电场/学考复习静电场.html" class="no-external"></a></p><a href="./posts/学考复习静电场/学考复习静电场.html" class="no-external">
-<p class="card-img-top"><img src="posts/学考复习静电场/assets/学考静电场复习.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/学考复习静电场/学考复习静电场.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/学考复习静电场/学考复习静电场.html" class="no-external">静电场复习</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/学考复习静电场/学考复习静电场.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('静电场，复习'); return false;">
-静电场，复习
+<div class="callout-title-container flex-fill">
+注意事项
 </div>
 </div>
-<div class="listing-description">
-<a href="./posts/学考复习静电场/学考复习静电场.html" class="no-external"><span class="math inline">\int\sin\theta d \theta=\cos\theta</span></a>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>游标卡尺是根据刻度线对齐来读数的，所以<strong>不需要估读</strong>，但<strong>读数要注意最小精确度所在的位数</strong>，如果读数最后一位是零，该零不能去掉。</li>
+<li>读数时，要注意游标尺第几条刻度线(不含零刻度线)与主尺对齐。</li>
+</ol>
 </div>
 </div>
-<div class="metadata">
-<a href="./posts/学考复习静电场/学考复习静电场.html" class="no-external">
-<div class="listing-date">
-Sep 2, 2024
-</div>
-<div class="listing-author">
-黄轶凡
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="电磁学,答案" data-listing-date-sort="1725206400000" data-listing-file-modified-sort="1725470324896" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="43">
-<div class="thumbnail">
-<p><a href="./posts/必修三课后题答案/必修三课后题答案.html" class="no-external"></a></p><a href="./posts/必修三课后题答案/必修三课后题答案.html" class="no-external">
-<p class="card-img-top"><img src="posts/必修三课后题答案/assets/必修三课后题答案.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/必修三课后题答案/必修三课后题答案.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/必修三课后题答案/必修三课后题答案.html" class="no-external">必修三课后题答案</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/必修三课后题答案/必修三课后题答案.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('电磁学'); return false;">
-电磁学
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('答案'); return false;">
-答案
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/必修三课后题答案/必修三课后题答案.html" class="no-external">
-
-<section id="电源和电流" class="level3">
-
-<p></p>
+<section id="读数练习" class="level4">
+<h4 class="anchored" data-anchor-id="读数练习">读数练习</h4>
+<iframe src="https://ggbtool.phycat.cn/front/?id=m0i455uh15kl&amp;W=800&amp;H=500&amp;E=0&amp;B=1&amp;S=0&amp;P=1&amp;R=0&amp;L=1&amp;F=1&amp;RE=1" width="800" height="500" frameborder="0" scrolling="no" allowfullscreen="">
+</iframe>
 </section>
-<section id="导体的电阻" class="level3">
-
-<p></p>
-<!-- ## 运行 JavaScript 脚本的按钮
-
-<button id="run-script-button">运行脚本</button>
-
-<script>
-document.getElementById("run-script-button").addEventListener("click", function() {
-    // 在这里添加您希望运行的 JavaScript 代码
-    alert("脚本已运行！");
-    // 例如，可以修改页面内容，执行计算，或发送请求等。
-    console.log("这是固定的 JavaScript 脚本。");
-});
-</script> -->
+<section id="变式" class="level4">
+<h4 class="anchored" data-anchor-id="变式">变式</h4>
+<p>有一种新式游标卡尺，它的刻度与传统的游标卡尺明显不同–刻度看起来很“稀疏”，使用时读数显得清晰明了，便于使用者正确读取数据。新式游标卡尺的刻度也有 <span class="math inline">10</span> 分度、<span class="math inline">20</span> 分度、<span class="math inline">50</span> 分度三种规格，但刻度却是 <span class="math inline">19\;\mathrm{mm}</span> 分成 <span class="math inline">10</span> 等分，<span class="math inline">39\;\mathrm{mm}</span> 分成 <span class="math inline">20</span> 等分，<span class="math inline">99\;\mathrm{mm}</span> 分成 <span class="math inline">50</span> 等分。以“<span class="math inline">39\;\mathrm{mm}</span> 分成 <span class="math inline">20</span> 等分”新式游标卡尺为例，如图，试分析其精确度是 <span class="math inline">\underline{\qquad}\;\mathrm{mm}</span>，如图的读数是 <span class="math inline">\underline{\qquad}\;\mathrm{mm}</span>。</p>
+<p><img src="./assets/实验：导体电阻率的测量-6.png" class="img-fluid" width="500"></p>
+</section>
+</section>
+<section id="螺旋测微器" class="level3">
+<h3 class="anchored" data-anchor-id="螺旋测微器">螺旋测微器</h3>
+<p><img src="./assets/实验：导体电阻率的测量-1.png" class="img-fluid"></p>
+<ol type="1">
+<li>构造：<span class="math inline">A</span> 测砧、<span class="math inline">B</span> 固定刻度、<span class="math inline">C</span> 尺架、<span class="math inline">D</span> 旋钮、<span class="math inline">D'</span> 微调旋钮、<span class="math inline">E</span> 可动刻度、<span class="math inline">F</span> 测微螺杆</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled" title="读数原理">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+读数原理
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>通过测量角度，进而得到对应的长度 <img src="./assets/实验：导体电阻率的测量-5.png" class="img-fluid"></p>
+</div>
+</div>
+</div>
+<ol start="2" type="1">
+<li>读数：<span class="math inline">测量值(\mathrm{mm})=固定刻度数(\mathrm{mm})+可动刻度数\times 0.01\;\mathrm{mm}</span> <strong>(可动刻度数要估读)</strong></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled" title="注意事项">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+注意事项
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>固定刻度数读数时要<strong>注意半毫米刻度线是否露出</strong>，露出来了就算，没露出来就不算。</li>
+<li><strong>可动刻度数要估读到下一位</strong>。读数时估读到千分之一毫米，因此，螺旋测微器又叫<strong>千分尺</strong>。</li>
+</ol>
+</div>
+</div>
+<section id="读数练习-1" class="level4">
+<h4 class="anchored" data-anchor-id="读数练习-1">读数练习</h4>
+<iframe src="https://ggbtool.phycat.cn/front/?id=m0i4dg181q66&amp;W=800&amp;H=500&amp;E=0&amp;B=1&amp;S=0&amp;P=1&amp;R=0&amp;L=1&amp;F=1&amp;RE=1" width="800" height="500" frameborder="0" scrolling="no" allowfullscreen="">
+</iframe>
+</section>
+</section>
+<section id="电压表和电流表的读数" class="level3">
+<h3 class="anchored" data-anchor-id="电压表和电流表的读数">电压表和电流表的读数</h3>
+</section>
+</section>
+<section id="金属丝电阻率的测量" class="level2">
+<h2 class="anchored" data-anchor-id="金属丝电阻率的测量">金属丝电阻率的测量</h2>
+<div class="callout callout-style-default callout-tip callout-titled" title="**误差分析**">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>误差分析</strong>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>系统误差：由于实验设计产生的误差，无法通过多次测量减少</li>
+</ol>
+<ul>
+<li>example：电流表分压、电压表分流导致的误差</li>
+</ul>
+<ol start="2" type="1">
+<li>偶然误差：可以通过多次测量取平均减少的误差</li>
+</ol>
+<ul>
+<li>example：直尺、螺旋测微器、电表读数误差</li>
+</ul>
+</div>
+</div>
 
 
 </section>
-</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/必修三课后题答案/必修三课后题答案.html" class="no-external">
-<div class="listing-date">
-Sep 2, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="电磁学,电路" data-listing-date-sort="1724947200000" data-listing-file-modified-sort="1725470335904" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="66">
-<div class="thumbnail">
-<p><a href="./posts/11-2导体的电阻/导体的电阻.html" class="no-external"></a></p><a href="./posts/11-2导体的电阻/导体的电阻.html" class="no-external">
-<p class="card-img-top"><img src="posts/11-2导体的电阻/assets/导体的电阻-1.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/11-2导体的电阻/导体的电阻.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/11-2导体的电阻/导体的电阻.html" class="no-external">导体的电阻</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/11-2导体的电阻/导体的电阻.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('电磁学'); return false;">
-电磁学
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('电路'); return false;">
-电路
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/11-2导体的电阻/导体的电阻.html" class="no-external">物理意义：导体对电流的阻碍作用</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/11-2导体的电阻/导体的电阻.html" class="no-external">
-<div class="listing-date">
-Aug 30, 2024
-</div>
-<div class="listing-author">
-黄轶凡
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="电磁学,电路" data-listing-date-sort="1724860800000" data-listing-file-modified-sort="1725470352841" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="148">
-<div class="thumbnail">
-<p><a href="./posts/11-1电源和电流/电源和电流.html" class="no-external"></a></p><a href="./posts/11-1电源和电流/电源和电流.html" class="no-external">
-<p class="card-img-top"><img src="posts/11-1电源和电流/assets/电源和电流-3.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/11-1电源和电流/电源和电流.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/11-1电源和电流/电源和电流.html" class="no-external">电源和电流</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/11-1电源和电流/电源和电流.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('电磁学'); return false;">
-电磁学
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('电路'); return false;">
-电路
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/11-1电源和电流/电源和电流.html" class="no-external">为什么闪电只能存在一瞬，而手电筒中的小灯泡能够持续发光？</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/11-1电源和电流/电源和电流.html" class="no-external">
-<div class="listing-date">
-Aug 29, 2024
-</div>
-<div class="listing-author">
-黄轶凡
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+
+</main> <!-- /main -->
 <script>
 // 确保文档内容加载完成后执行以下脚本
 document.addEventListener("DOMContentLoaded", function() {

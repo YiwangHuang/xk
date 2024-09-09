@@ -23,24 +23,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,91 +66,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script defer="" src="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <link rel="stylesheet" href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css">
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">iPhys</span>
     </a>
   </div>
@@ -163,11 +89,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./#"> 
+    <a class="nav-link" href="../../#"> 
 <span class="menu-text">隐藏目录</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -193,325 +119,31 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">iPhys</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page-left">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="电磁学">电磁学 <span class="quarto-category-count">(5)</span></div><div class="category" data-category="电路">电路 <span class="quarto-category-count">(4)</span></div><div class="category" data-category="答案">答案 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="静电场，复习">静电场，复习 <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#合力" id="toc-合力" class="nav-link active" data-scroll-target="#合力">合力</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 
 
 
-
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="电磁学,电路" data-listing-date-sort="1725811200000" data-listing-file-modified-sort="1725846713376" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="166">
-<div class="thumbnail">
-<p><a href="./posts/11-3实验：导体电阻率的测量/实验：导体电阻率的测量.html" class="no-external"></a></p><a href="./posts/11-3实验：导体电阻率的测量/实验：导体电阻率的测量.html" class="no-external">
-<p class="card-img-top"><img src="posts/11-3实验：导体电阻率的测量/assets/实验：导体电阻率的测量.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/11-3实验：导体电阻率的测量/实验：导体电阻率的测量.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/11-3实验：导体电阻率的测量/实验：导体电阻率的测量.html" class="no-external">串联电路和并联电路</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/11-3实验：导体电阻率的测量/实验：导体电阻率的测量.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('电磁学'); return false;">
-电磁学
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('电路'); return false;">
-电路
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/11-3实验：导体电阻率的测量/实验：导体电阻率的测量.html" class="no-external">构造：主尺、游标尺</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/11-3实验：导体电阻率的测量/实验：导体电阻率的测量.html" class="no-external">
-<div class="listing-date">
-Sep 9, 2024
-</div>
-<div class="listing-author">
-黄轶凡
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="电磁学,电路" data-listing-date-sort="1725465600000" data-listing-file-modified-sort="1725623172883" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1616">
-<div class="thumbnail">
-<p><a href="./posts/11-4串联电路和并联电路/串联电路和并联电路.html" class="no-external"></a></p><a href="./posts/11-4串联电路和并联电路/串联电路和并联电路.html" class="no-external">
-<p class="card-img-top"><img src="posts/11-4串联电路和并联电路/assets/串联电路和并联电路-33.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/11-4串联电路和并联电路/串联电路和并联电路.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/11-4串联电路和并联电路/串联电路和并联电路.html" class="no-external">串联电路和并联电路</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/11-4串联电路和并联电路/串联电路和并联电路.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('电磁学'); return false;">
-电磁学
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('电路'); return false;">
-电路
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/11-4串联电路和并联电路/串联电路和并联电路.html" class="no-external"><br> <br></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/11-4串联电路和并联电路/串联电路和并联电路.html" class="no-external">
-<div class="listing-date">
-Sep 5, 2024
-</div>
-<div class="listing-author">
-黄轶凡
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="静电场，复习" data-listing-date-sort="1725206400000" data-listing-file-modified-sort="1725645723504" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="336">
-<div class="thumbnail">
-<p><a href="./posts/学考复习静电场/学考复习静电场.html" class="no-external"></a></p><a href="./posts/学考复习静电场/学考复习静电场.html" class="no-external">
-<p class="card-img-top"><img src="posts/学考复习静电场/assets/学考静电场复习.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/学考复习静电场/学考复习静电场.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/学考复习静电场/学考复习静电场.html" class="no-external">静电场复习</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/学考复习静电场/学考复习静电场.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('静电场，复习'); return false;">
-静电场，复习
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/学考复习静电场/学考复习静电场.html" class="no-external"><span class="math inline">\int\sin\theta d \theta=\cos\theta</span></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/学考复习静电场/学考复习静电场.html" class="no-external">
-<div class="listing-date">
-Sep 2, 2024
-</div>
-<div class="listing-author">
-黄轶凡
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="电磁学,答案" data-listing-date-sort="1725206400000" data-listing-file-modified-sort="1725470324896" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="43">
-<div class="thumbnail">
-<p><a href="./posts/必修三课后题答案/必修三课后题答案.html" class="no-external"></a></p><a href="./posts/必修三课后题答案/必修三课后题答案.html" class="no-external">
-<p class="card-img-top"><img src="posts/必修三课后题答案/assets/必修三课后题答案.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/必修三课后题答案/必修三课后题答案.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/必修三课后题答案/必修三课后题答案.html" class="no-external">必修三课后题答案</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/必修三课后题答案/必修三课后题答案.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('电磁学'); return false;">
-电磁学
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('答案'); return false;">
-答案
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/必修三课后题答案/必修三课后题答案.html" class="no-external">
-
-<section id="电源和电流" class="level3">
-
-<p></p>
-</section>
-<section id="导体的电阻" class="level3">
-
-<p></p>
-<!-- ## 运行 JavaScript 脚本的按钮
-
-<button id="run-script-button">运行脚本</button>
-
-<script>
-document.getElementById("run-script-button").addEventListener("click", function() {
-    // 在这里添加您希望运行的 JavaScript 代码
-    alert("脚本已运行！");
-    // 例如，可以修改页面内容，执行计算，或发送请求等。
-    console.log("这是固定的 JavaScript 脚本。");
-});
-</script> -->
+<section id="合力" class="level1">
+<h1>合力</h1>
 
 
 </section>
-</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/必修三课后题答案/必修三课后题答案.html" class="no-external">
-<div class="listing-date">
-Sep 2, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="电磁学,电路" data-listing-date-sort="1724947200000" data-listing-file-modified-sort="1725470335904" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="66">
-<div class="thumbnail">
-<p><a href="./posts/11-2导体的电阻/导体的电阻.html" class="no-external"></a></p><a href="./posts/11-2导体的电阻/导体的电阻.html" class="no-external">
-<p class="card-img-top"><img src="posts/11-2导体的电阻/assets/导体的电阻-1.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/11-2导体的电阻/导体的电阻.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/11-2导体的电阻/导体的电阻.html" class="no-external">导体的电阻</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/11-2导体的电阻/导体的电阻.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('电磁学'); return false;">
-电磁学
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('电路'); return false;">
-电路
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/11-2导体的电阻/导体的电阻.html" class="no-external">物理意义：导体对电流的阻碍作用</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/11-2导体的电阻/导体的电阻.html" class="no-external">
-<div class="listing-date">
-Aug 30, 2024
-</div>
-<div class="listing-author">
-黄轶凡
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="电磁学,电路" data-listing-date-sort="1724860800000" data-listing-file-modified-sort="1725470352841" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="148">
-<div class="thumbnail">
-<p><a href="./posts/11-1电源和电流/电源和电流.html" class="no-external"></a></p><a href="./posts/11-1电源和电流/电源和电流.html" class="no-external">
-<p class="card-img-top"><img src="posts/11-1电源和电流/assets/电源和电流-3.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/11-1电源和电流/电源和电流.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/11-1电源和电流/电源和电流.html" class="no-external">电源和电流</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/11-1电源和电流/电源和电流.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('电磁学'); return false;">
-电磁学
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('电路'); return false;">
-电路
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/11-1电源和电流/电源和电流.html" class="no-external">为什么闪电只能存在一瞬，而手电筒中的小灯泡能够持续发光？</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/11-1电源和电流/电源和电流.html" class="no-external">
-<div class="listing-date">
-Aug 29, 2024
-</div>
-<div class="listing-author">
-黄轶凡
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
-<script>
-// 确保文档内容加载完成后执行以下脚本
-document.addEventListener("DOMContentLoaded", function() {
-  // 获取body元素、按钮和可能存在的div
-  const body = document.querySelector('body');
-  const sidebar = document.getElementById('quarto-margin-sidebar');
 
-
-  // 查找导航栏中的所有链接项
-  var navItems = document.querySelectorAll('.navbar a');
-
-  // 遍历每个链接项，寻找文本内容为“Trigger JS”的项
-  navItems.forEach(function(item) {
-    if (item.textContent.trim() === "隐藏目录") {
-
-      // 为找到的项添加点击事件监听器
-      item.addEventListener("click", function(event) {
-        event.preventDefault();  // 阻止默认的跳转行为
-
-        // 显示提示框，表示 JavaScript 已经触发
-        // alert("JavaScript script triggered!");
-        
-        // 你可以在这里添加其他自定义的 JavaScript 脚本
-
-        // 切换body的class
-        body.classList.toggle('fullcontent');
-
-        // 根据body的class初始化div显示状态
-        if (body.classList.contains('fullcontent')) {
-            if (sidebar) {
-              item.textContent = '显示目录';
-              sidebar.style.display = 'none'; // 设置目录栏的显示状态
-            }
-        } else {
-            if (sidebar) {
-              item.textContent = '隐藏目录';
-              sidebar.style.display = 'block'; // 设置目录栏的显示状态
-            }
-        }
-      });
-    }
-  });
-});
-</script>
-
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
