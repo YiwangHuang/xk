@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="黄轶凡">
+<meta name="dcterms.date" content="2024-09-17">
 
-<title>iPhys</title>
+<title>iPhys - 电路中的能量转化</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,35 +68,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
   <script defer="" src="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.js"></script>
   <script>document.addEventListener("DOMContentLoaded", function () {
@@ -142,17 +113,17 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">iPhys</span>
     </a>
   </div>
@@ -163,11 +134,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./#"> 
+    <a class="nav-link" href="../../#"> 
 <span class="menu-text">隐藏目录</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -193,316 +164,266 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">iPhys</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page-left">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(7)</span></div><div class="category" data-category="电磁学">电磁学 <span class="quarto-category-count">(6)</span></div><div class="category" data-category="电路">电路 <span class="quarto-category-count">(5)</span></div><div class="category" data-category="答案">答案 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="静电场，复习">静电场，复习 <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#电功和电功率" id="toc-电功和电功率" class="nav-link active" data-scroll-target="#电功和电功率">电功和电功率</a>
+  <ul class="collapse">
+  <li><a href="#电功" id="toc-电功" class="nav-link" data-scroll-target="#电功">电功</a></li>
+  <li><a href="#电功率" id="toc-电功率" class="nav-link" data-scroll-target="#电功率">电功率</a></li>
+  </ul></li>
+  <li><a href="#焦耳定律" id="toc-焦耳定律" class="nav-link" data-scroll-target="#焦耳定律">焦耳定律</a></li>
+  <li><a href="#电路中能量的转换" id="toc-电路中能量的转换" class="nav-link" data-scroll-target="#电路中能量的转换">电路中能量的转换</a>
+  <ul class="collapse">
+  <li><a href="#纯电阻与非纯电阻" id="toc-纯电阻与非纯电阻" class="nav-link" data-scroll-target="#纯电阻与非纯电阻">纯电阻与非纯电阻</a></li>
+  <li><a href="#非纯电阻电路问题分析" id="toc-非纯电阻电路问题分析" class="nav-link" data-scroll-target="#非纯电阻电路问题分析">非纯电阻电路问题分析</a></li>
+  <li><a href="#qa" id="toc-qa" class="nav-link" data-scroll-target="#qa">Q&amp;A</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">电路中的能量转化</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">电磁学</div>
+    <div class="quarto-category">电路</div>
+  </div>
+  </div>
 
 
 
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>黄轶凡 </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 17, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
 
 
+</header>
 
 
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="电磁学,电路" data-listing-date-sort="1726502400000" data-listing-file-modified-sort="1726633008815" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="204">
-<div class="thumbnail">
-<p><a href="./posts/12-1电路中的能量转化/电路中的能量转化.html" class="no-external"></a></p><a href="./posts/12-1电路中的能量转化/电路中的能量转化.html" class="no-external">
-<p class="card-img-top"><img src="posts/12-1电路中的能量转化/assets/电路中的能量转化.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/12-1电路中的能量转化/电路中的能量转化.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/12-1电路中的能量转化/电路中的能量转化.html" class="no-external">电路中的能量转化</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/12-1电路中的能量转化/电路中的能量转化.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('电磁学'); return false;">
-电磁学
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('电路'); return false;">
-电路
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/12-1电路中的能量转化/电路中的能量转化.html" class="no-external">把六个相同的小灯泡接成如图甲、乙所示的电路，调节变阻器使灯泡正常发光，甲、乙两电路所消耗的总功率分别用 <span class="math inline">P_{甲}</span>和 <span class="math inline">P_{乙}</span>表示，则下列结论中正确的是</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/12-1电路中的能量转化/电路中的能量转化.html" class="no-external">
-<div class="listing-date">
-Sep 17, 2024
-</div>
-<div class="listing-author">
-黄轶凡
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="电磁学,电路" data-listing-date-sort="1725811200000" data-listing-file-modified-sort="1726186278473" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="170">
-<div class="thumbnail">
-<p><a href="./posts/11-3实验：导体电阻率的测量/实验：导体电阻率的测量.html" class="no-external"></a></p><a href="./posts/11-3实验：导体电阻率的测量/实验：导体电阻率的测量.html" class="no-external">
-<p class="card-img-top"><img src="posts/11-3实验：导体电阻率的测量/assets/实验：导体电阻率的测量.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/11-3实验：导体电阻率的测量/实验：导体电阻率的测量.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/11-3实验：导体电阻率的测量/实验：导体电阻率的测量.html" class="no-external">实验：导体电阻率的测量</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/11-3实验：导体电阻率的测量/实验：导体电阻率的测量.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('电磁学'); return false;">
-电磁学
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('电路'); return false;">
-电路
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/11-3实验：导体电阻率的测量/实验：导体电阻率的测量.html" class="no-external">构造：主尺、游标尺</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/11-3实验：导体电阻率的测量/实验：导体电阻率的测量.html" class="no-external">
-<div class="listing-date">
-Sep 9, 2024
-</div>
-<div class="listing-author">
-黄轶凡
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="电磁学,电路" data-listing-date-sort="1725465600000" data-listing-file-modified-sort="1726041555437" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1612">
-<div class="thumbnail">
-<p><a href="./posts/11-4串联电路和并联电路/串联电路和并联电路.html" class="no-external"></a></p><a href="./posts/11-4串联电路和并联电路/串联电路和并联电路.html" class="no-external">
-<p class="card-img-top"><img src="posts/11-4串联电路和并联电路/assets/串联电路和并联电路-33.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/11-4串联电路和并联电路/串联电路和并联电路.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/11-4串联电路和并联电路/串联电路和并联电路.html" class="no-external">串联电路和并联电路</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/11-4串联电路和并联电路/串联电路和并联电路.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('电磁学'); return false;">
-电磁学
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('电路'); return false;">
-电路
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/11-4串联电路和并联电路/串联电路和并联电路.html" class="no-external"><br> <br></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/11-4串联电路和并联电路/串联电路和并联电路.html" class="no-external">
-<div class="listing-date">
-Sep 5, 2024
-</div>
-<div class="listing-author">
-黄轶凡
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="静电场，复习" data-listing-date-sort="1725206400000" data-listing-file-modified-sort="1725645723504" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="336">
-<div class="thumbnail">
-<p><a href="./posts/学考复习静电场/学考复习静电场.html" class="no-external"></a></p><a href="./posts/学考复习静电场/学考复习静电场.html" class="no-external">
-<p class="card-img-top"><img src="posts/学考复习静电场/assets/学考静电场复习.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/学考复习静电场/学考复习静电场.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/学考复习静电场/学考复习静电场.html" class="no-external">静电场复习</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/学考复习静电场/学考复习静电场.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('静电场，复习'); return false;">
-静电场，复习
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/学考复习静电场/学考复习静电场.html" class="no-external"><span class="math inline">\int\sin\theta d \theta=\cos\theta</span></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/学考复习静电场/学考复习静电场.html" class="no-external">
-<div class="listing-date">
-Sep 2, 2024
-</div>
-<div class="listing-author">
-黄轶凡
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="电磁学,答案" data-listing-date-sort="1725206400000" data-listing-file-modified-sort="1725470324896" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="43">
-<div class="thumbnail">
-<p><a href="./posts/必修三课后题答案/必修三课后题答案.html" class="no-external"></a></p><a href="./posts/必修三课后题答案/必修三课后题答案.html" class="no-external">
-<p class="card-img-top"><img src="posts/必修三课后题答案/assets/必修三课后题答案.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/必修三课后题答案/必修三课后题答案.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/必修三课后题答案/必修三课后题答案.html" class="no-external">必修三课后题答案</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/必修三课后题答案/必修三课后题答案.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('电磁学'); return false;">
-电磁学
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('答案'); return false;">
-答案
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/必修三课后题答案/必修三课后题答案.html" class="no-external">
-
-<section id="电源和电流" class="level3">
-
-<p></p>
+<section id="电功和电功率" class="level2">
+<h2 class="anchored" data-anchor-id="电功和电功率">电功和电功率</h2>
+<section id="电功" class="level3">
+<h3 class="anchored" data-anchor-id="电功">电功</h3>
+<ol type="1">
+<li>定义：电流在一段电路中所做的功</li>
+<li>公式：<span class="math inline">W=UIt</span></li>
+<li>单位：
+<ul>
+<li>国际单位制：焦耳 (<span class="math inline">J</span>)</li>
+<li>常用单位：千瓦时 (<span class="math inline">kW\cdot h</span>)，日常生活中称“度”</li>
+</ul></li>
+<li>物理意义：电功是电能转化成其它形式的能的量度</li>
+<li>实质：导体中恒定电场对自由电荷的静电力做正功，电势能减小，其他形式的能增加。</li>
+</ol>
 </section>
-<section id="导体的电阻" class="level3">
+<section id="电功率" class="level3">
+<h3 class="anchored" data-anchor-id="电功率">电功率</h3>
+<ol type="1">
+<li>定义：电流在一段电路中所做的功与通电时间之比</li>
+<li>公式：<span class="math inline">P=\frac{W}{t}=UI</span></li>
+<li>单位：
+<ul>
+<li>国际单位制：瓦特 (<span class="math inline">W</span>)</li>
+<li>常用单位：千瓦 (<span class="math inline">kW</span>)</li>
+</ul></li>
+<li>物理意义：表示电流做功快慢的物理量</li>
+</ol>
+<section id="练习" class="level4">
+<h4 class="anchored" data-anchor-id="练习">练习</h4>
+<p>把六个相同的小灯泡接成如图甲、乙所示的电路，调节变阻器使灯泡正常发光，甲、乙两电路所消耗的总功率分别用 <span class="math inline">P_{甲}</span>和 <span class="math inline">P_{乙}</span>表示，则下列结论中正确的是</p>
+<div class="columns">
+<div class="column" style="width:25%;">
 
-<p></p>
-<!-- ## 运行 JavaScript 脚本的按钮
+</div><div class="column" style="width:49.9%;">
+<img src="./assets/电路中的能量转化.png" class="img-fluid">
+<center>
+甲       乙
+</center>
+</div><div class="column" style="width:25.099999999999994%;">
 
-<button id="run-script-button">运行脚本</button>
-
-<script>
-document.getElementById("run-script-button").addEventListener("click", function() {
-    // 在这里添加您希望运行的 JavaScript 代码
-    alert("脚本已运行！");
-    // 例如，可以修改页面内容，执行计算，或发送请求等。
-    console.log("这是固定的 JavaScript 脚本。");
-});
-</script> -->
+</div>
+</div>
+<p>A. <span class="math inline">P_{甲}=P_{乙}</span>   B. <span class="math inline">P_{甲}=3P_{乙}</span>   C. <span class="math inline">P_{乙}=3P_{甲}</span>   D. <span class="math inline">P_{甲}&gt;3P_{乙}</span></p>
+</section>
+</section>
+</section>
+<section id="焦耳定律" class="level2">
+<h2 class="anchored" data-anchor-id="焦耳定律">焦耳定律</h2>
+<ol type="1">
+<li><p>内容：电流通过导体时产生的热量 <span class="math inline">Q</span> 等于电流 <span class="math inline">I</span> 的二次方、导体的电阻 <span class="math inline">R</span> 和通电时间 <span class="math inline">t</span> 三者的乘积</p></li>
+<li><p>表达式：<span class="math inline">Q=I^{2}Rt</span></p></li>
+<li><p>热功率：单位时间内导体的发热量叫做热功率，表示单位时间内产生热量快慢的物理量</p></li>
+</ol>
+<p><span class="math display">
+P_{热}=\frac{Q}{t}=I^{2}R
+</span></p>
+</section>
+<section id="电路中能量的转换" class="level2">
+<h2 class="anchored" data-anchor-id="电路中能量的转换">电路中能量的转换</h2>
+<div class="callout callout-style-default callout-caution callout-titled" title="思考">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+思考
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>把标有“<span class="math inline">220\;V\quad40\;W</span>”的电热丝和“<span class="math inline">220\; V\quad 40\; W</span>”的电动机，它们并联后接到 <span class="math inline">220\;V</span> 的照明电路中，二者都能正常工作，它们在相同的时间内产生的电热相同吗？为什么？</p>
+</div>
+</div>
+<section id="纯电阻与非纯电阻" class="level3">
+<h3 class="anchored" data-anchor-id="纯电阻与非纯电阻">纯电阻与非纯电阻</h3>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img src="./assets/电路中的能量转化-4.png" class="img-fluid"></p>
+</div><div class="column" style="width:50%;">
+<p><img src="./assets/电路中的能量转化-5.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>纯电阻电路中 <span class="math inline">W=Q</span>， 即 <span class="math inline">UIt=I^{2}Rt\Rightarrow U=IR</span> <strong>欧姆定律成立</strong></p>
+<ul>
+<li>计算电功和电热时 <span class="math inline">W=Q=UIt=I^2Rt=\frac{U^2t}R</span></li>
+<li>计算电功率和热功率时 <span class="math inline">P=UI=I^{2}R=\frac{U^{2}}{R}</span></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p>非纯电阻电路中 <span class="math inline">W&gt;Q</span>， 即 <span class="math inline">IUt&gt;I^{2}Rt\Rightarrow U&gt;IR</span> <strong>欧姆定律不成立</strong></p>
+<ul>
+<li>计算电功时只能用 <span class="math inline">W=IUt</span>；计算电热只能用 <span class="math inline">Q=I^{2}Rt</span></li>
+<li>计算电功率只能用 <span class="math inline">P=UI</span>；计算热功率只能用 <span class="math inline">P=I^{2}R</span></li>
+</ul>
+</div>
+</div>
+<section id="练习-1" class="level4">
+<h4 class="anchored" data-anchor-id="练习-1">练习</h4>
+<p>把家用电炉的电热丝剪去一小段后，继续使用，则在同样的时间内</p>
+<p>A. 由 <span class="math inline">Q＝I^{2}Rt</span> 可知，电炉的发热量减小<br> B. 由 <span class="math inline">Q＝UIt</span> 可知，电炉的发热量不变<br> C. 由 <span class="math inline">\frac{Q＝U^{2}}{R}t</span> 可知，电炉的发热量增大<br> D. 无法确定</p>
+</section>
+</section>
+<section id="非纯电阻电路问题分析" class="level3">
+<h3 class="anchored" data-anchor-id="非纯电阻电路问题分析">非纯电阻电路问题分析</h3>
+<div class="columns">
+<div class="column" style="width:65%;">
+<div class="callout callout-style-default callout-tip callout-titled" title="电动机的“三个功率和效率”">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+电动机的“三个功率和效率”
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>输入功率：电动机消耗的总功率 <span class="math inline">P_{入}=UI</span></li>
+<li>热功率：线圈上电阻的发热功率 <span class="math inline">P_{热}=I^{2}r</span></li>
+<li>输出功率（机械功率）：电动机将电能转化为机械能的功率：<span class="math inline">P_{出}=P_{入}-P_{热}=UI-I^{2}r</span></li>
+<li>电动机的效率：<span class="math inline">\eta=\frac{P_{出}}{P_{入}}=\frac{UI-I^{2}r}{UI}</span></li>
+</ol>
+</div>
+</div>
+</div><div class="column" style="width:35%;">
+<p><img src="./assets/电路中的能量转化-2.png" class="img-fluid"></p>
+</div>
+</div>
+<section id="练习-2" class="level4">
+<h4 class="anchored" data-anchor-id="练习-2">练习</h4>
+<p>如图所示为电动机提升重物的装置，电动机线圈电阻 <span class="math inline">r=1\Omega</span> 电动机两端电压为 <span class="math inline">5\;V</span>，电路中的电流为 <span class="math inline">1\;A</span>，重物 <span class="math inline">m</span> 受到重力为 <span class="math inline">20\;N</span>。不计摩擦力，求：</p>
+<div class="columns">
+<div class="column" style="width:70%;">
+<ol type="1">
+<li>电动机的输入功率和线圈电阻上消耗的热功率各是多少？</li>
+<li>电动机的输出功率和效率各是多少？</li>
+<li>电动机可以把重物以多大的速度竖直向上提升？</li>
+</ol>
+</div><div class="column" style="width:30%;">
+<p><img src="./assets/电路中的能量转化-1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="练习-3" class="level4">
+<h4 class="anchored" data-anchor-id="练习-3">练习</h4>
+<div class="columns">
+<div class="column" style="width:70%;">
+<p>如图所示，<span class="math inline">A</span> 为电解槽（电能转化为化学能的装置），<span class="math inline">N</span> 为电炉子，恒定电压 <span class="math inline">U=12\;V</span>，电解槽内阻 <span class="math inline">r_{A}=2\;\Omega</span>，当 <span class="math inline">K_{1}</span> 闭合，<span class="math inline">K_{2}</span> 断开时，电流表示数 <span class="math inline">I_{1}=6\;A</span>；当 <span class="math inline">K_{2}</span> 闭合，<span class="math inline">K_{1}</span> 断开时，电流表示数为 <span class="math inline">I_{2}=2\;A</span>，不计电流表内阻，求： 1. 电炉子的电阻 <span class="math inline">R</span> 及发热功率 <span class="math inline">P_{R}</span>； 2. 在电解槽工作时，电能转化为化学能的功率 <span class="math inline">P_{化}</span>。</p>
+</div><div class="column" style="width:30%;">
+<p><img src="./assets/电路中的能量转化-3.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+</section>
+<section id="qa" class="level3">
+<h3 class="anchored" data-anchor-id="qa">Q&amp;A</h3>
+<div class="callout callout-style-default callout-warning callout-titled" title="思考 1">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+思考 1
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>在纯电阻电路中 1. 两个电阻串联，电阻大的电功率？ 2. 两个电阻并联，电阻大的电功率？</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled" title="思考 2">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+思考 2
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>串/并联电路中，两个电阻消耗的功率与每个电阻功率的关系？</p>
+</div>
+</div>
+<section id="练习-4" class="level4">
+<h4 class="anchored" data-anchor-id="练习-4">练习</h4>
+<p>两只额定电压均为 <span class="math inline">110\;\mathrm{V}</span> 的灯泡 <span class="math inline">A</span> 和 <span class="math inline">B</span>，额定功率分别为 <span class="math inline">40\;\mathrm{W}</span> 和 <span class="math inline">100\;\mathrm{W}</span>，为了使它们接到 <span class="math inline">220\;\mathrm{W}</span> 电源上能正常发光，同时电路消耗的电功率最小，如图所示的四个电路中最合理的是图 <span class="math inline">\underline{\qquad}</span></p>
+<p><img src="./assets/电路中的能量转化-7.png" class="img-fluid" width="500"></p>
+</section>
+<section id="练习-5" class="level4">
+<h4 class="anchored" data-anchor-id="练习-5">练习</h4>
+<p>额定电压都是 <span class="math inline">110\;\mathrm{V}</span>，额定功率 <span class="math inline">P_{A}＝100\;\mathrm{W}</span>，<span class="math inline">P_{B}＝40\;\mathrm{W}</span> 的电灯两盏，若接在电压是 <span class="math inline">220\;\mathrm{V}</span> 的电路上，使两盏电灯均能正常发光，且电路中消耗功率最小的电路是 <span class="math inline">\underline{\qquad}</span></p>
+<p><img src="./assets/电路中的能量转化-8.png" class="img-fluid" width="360"></p>
 
 
 </section>
-</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/必修三课后题答案/必修三课后题答案.html" class="no-external">
-<div class="listing-date">
-Sep 2, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="电磁学,电路" data-listing-date-sort="1724947200000" data-listing-file-modified-sort="1725470335904" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="66">
-<div class="thumbnail">
-<p><a href="./posts/11-2导体的电阻/导体的电阻.html" class="no-external"></a></p><a href="./posts/11-2导体的电阻/导体的电阻.html" class="no-external">
-<p class="card-img-top"><img src="posts/11-2导体的电阻/assets/导体的电阻-1.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/11-2导体的电阻/导体的电阻.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/11-2导体的电阻/导体的电阻.html" class="no-external">导体的电阻</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/11-2导体的电阻/导体的电阻.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('电磁学'); return false;">
-电磁学
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('电路'); return false;">
-电路
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/11-2导体的电阻/导体的电阻.html" class="no-external">物理意义：导体对电流的阻碍作用</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/11-2导体的电阻/导体的电阻.html" class="no-external">
-<div class="listing-date">
-Aug 30, 2024
-</div>
-<div class="listing-author">
-黄轶凡
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="电磁学,电路" data-listing-date-sort="1724860800000" data-listing-file-modified-sort="1725470352841" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="148">
-<div class="thumbnail">
-<p><a href="./posts/11-1电源和电流/电源和电流.html" class="no-external"></a></p><a href="./posts/11-1电源和电流/电源和电流.html" class="no-external">
-<p class="card-img-top"><img src="posts/11-1电源和电流/assets/电源和电流-3.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/11-1电源和电流/电源和电流.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/11-1电源和电流/电源和电流.html" class="no-external">电源和电流</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/11-1电源和电流/电源和电流.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('电磁学'); return false;">
-电磁学
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('电路'); return false;">
-电路
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/11-1电源和电流/电源和电流.html" class="no-external">为什么闪电只能存在一瞬，而手电筒中的小灯泡能够持续发光？</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/11-1电源和电流/电源和电流.html" class="no-external">
-<div class="listing-date">
-Aug 29, 2024
-</div>
-<div class="listing-author">
-黄轶凡
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</section>
+</section>
+
+</main> <!-- /main -->
 <script>
 // 确保文档内容加载完成后执行以下脚本
 document.addEventListener("DOMContentLoaded", function() {
