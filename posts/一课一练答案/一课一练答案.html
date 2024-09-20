@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-09-03">
+<meta name="author" content="黄轶凡">
+<meta name="dcterms.date" content="2024-09-20">
 
-<title>iPhys - 按钮测试文件</title>
+<title>iPhys - 一课一练答案</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -68,49 +69,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script defer="" src="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <link rel="stylesheet" href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css">
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -171,9 +129,7 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#恒定电场" id="toc-恒定电场" class="nav-link active" data-scroll-target="#恒定电场">恒定电场</a></li>
-  <li><a href="#恒定电流" id="toc-恒定电流" class="nav-link" data-scroll-target="#恒定电流">恒定电流</a></li>
-  <li><a href="#电流的定义" id="toc-电流的定义" class="nav-link" data-scroll-target="#电流的定义">电流的定义</a></li>
+  <li><a href="#下载答案" id="toc-下载答案" class="nav-link active" data-scroll-target="#下载答案">下载答案</a></li>
   </ul>
 </nav>
     </div>
@@ -182,9 +138,9 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">按钮测试文件</h1>
+<h1 class="title">一课一练答案</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">测试文件</div>
+    <div class="quarto-category">答案</div>
   </div>
   </div>
 
@@ -192,11 +148,17 @@ window.Quarto = {
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>黄轶凡 </p>
+          </div>
+  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 3, 2024</p>
+      <p class="date">September 20, 2024</p>
     </div>
   </div>
   
@@ -208,154 +170,9 @@ window.Quarto = {
 </header>
 
 
-<!-- include 是跨文档复用内容的便捷方法，用该方法引入视图切换按钮 -->
-<!-- {{< include ../../custom.js >}} -->
-<style>
-.quarto-button {
-    background-color: #007acc;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: uppercase;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, box-shadow 0.3s;
-    cursor: pointer;
-}
-
-.quarto-button:hover {
-    background-color: #005fa3;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-}
-
-.quarto-button:active {
-    background-color: #004a82;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-}    
-</style>
-<button id="toggleButton" class="quarto-button">
-Loading…
-</button>
-<script>
-    // 获取body元素、按钮和可能存在的div
-    const body = document.querySelector('body');
-    const toggleButton = document.getElementById('toggleButton');
-    const sidebar = document.getElementById('quarto-margin-sidebar');
-
-    // 根据body的class初始化按钮文本和（可选的）div显示状态
-    function updateUI() {
-        if (body.classList.contains('fullcontent')) {
-            toggleButton.textContent = 'Exit Full Content';
-            if (sidebar) {
-                sidebar.style.display = 'none';
-            }
-        } else {
-            toggleButton.textContent = 'Enter Full Content';
-            if (sidebar) {
-                sidebar.style.display = 'block';
-            }
-        }
-    }
-    // 初始化按钮文本和div显示状态
-    updateUI();
-
-    // 定义按钮点击事件的处理函数
-    toggleButton.addEventListener('click', () => {
-        // 切换body的class
-        body.classList.toggle('fullcontent');
-        
-        // 更新按钮文本和div显示状态
-        updateUI();
-    });
-</script>
-<section id="恒定电场" class="level3">
-<h3 class="anchored" data-anchor-id="恒定电场">恒定电场</h3>
-<p>由稳定分布的电荷所产生的稳定的电场，叫作<strong>恒定电场</strong></p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ol type="1">
-<li>尽管这些电荷也在运动，但有的流走了，另外的又来补充，电荷的分布是稳定的，不随时间变化，电场的分布也不会随时间变化；</li>
-<li><strong>恒定电场是由电源、导线等电路元件所积累的电荷共同形成的。</strong></li>
-</ol>
-</div>
-</div>
-</section>
-<section id="恒定电流" class="level3">
-<h3 class="anchored" data-anchor-id="恒定电流">恒定电流</h3>
-<div class="callout callout-style-default callout-warning callout-titled" title="思考">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-思考
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>在恒定电场的作用下，导体中的自由电荷做定向移动。那么这个移动的速度会不会随着时间的推移而越来越快？</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled" title="答案">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-答案
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>在运动过程中与导体内不动的粒子不断碰撞，碰撞阻碍了自由电荷的定向运动，结果是<strong>大量自由电荷定向运动的平均速率不随时间变化</strong>。</p>
-</div>
-</div>
-</div>
-<p>大小和方向都不随时间变化的电流叫做<strong>恒定电流</strong></p>
-</section>
-<section id="电流的定义" class="level3">
-<h3 class="anchored" data-anchor-id="电流的定义">电流的定义</h3>
-<div class="callout callout-style-default callout-warning callout-titled" title="思考">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-思考
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>如何描述校门口的车流量大小？尝试总结几个关键要素</p>
-</div>
-</div>
-<ol type="1">
-<li><p>电流定义：单位时间内通过某个横截面的电荷量</p></li>
-<li><p>定义式：<span class="math inline">I=\frac{q}{t}</span></p></li>
-<li><p>单位：安培，是国际单位中的<strong>基本单位</strong>，<span class="math inline">1\;C=1\;A\cdot S</span></p></li>
-<li><p>电流方向：正电荷定向移动的方向为电流方向（标量）</p></li>
-<li></li>
-</ol>
-<p><span class="math display">
-\cos^{2} \theta + \sin^{2}\theta=1
-</span></p>
-<p><span class="math display">
-\int\sin \theta d \theta=\cos\theta
-</span></p>
-<p><span class="math display">
-\int \sin\theta d \theta =\cos \theta
-</span></p>
-<p><span class="math display">\begin{align}P_\text{总}&amp;=U(I_1+I_2) =U_1I+U_2I\\&amp;=P_1+P_2\end{align}</span></p>
-<p><a href="./assets/读数练习.pdf">下载</a></p>
+<section id="下载答案" class="level2">
+<h2 class="anchored" data-anchor-id="下载答案">下载答案</h2>
+<p><a href="./assets/2024-09-20读数练习.pdf">2024-09-20读数练习</a></p>
 
 
 </section>
